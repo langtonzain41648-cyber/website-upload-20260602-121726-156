@@ -1,0 +1,2199 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>热播榜-免费亚洲电影</title>
+  <meta name="description" content="免费亚洲电影热播榜，展示评分、播放量与年份综合表现较高的热门影片。">
+  <meta name="keywords" content="热播榜,免费亚洲电影,高清电影片库,亚洲电影,热门内容,持续更新,精选影片,经典电影">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="index.html" aria-label="免费亚洲电影首页">
+      <span class="logo-mark">影</span>
+      <span class="logo-text">免费亚洲电影</span>
+    </a>
+    <nav class="main-nav" aria-label="主导航">
+      <a class="nav-link" href="index.html">首页</a>
+      <a class="nav-link" href="categories.html">分类</a>
+      <a class="nav-link active" href="ranking.html">热播榜</a>
+      <a class="nav-link" href="all-movies.html">片库</a>
+    </nav>
+    <button class="nav-toggle" type="button" aria-label="展开导航" data-nav-toggle>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+<main>
+<section class="page-hero compact-hero">
+  <div class="section-kicker">免费亚洲电影</div>
+  <h1>热播榜</h1>
+  <p>输入片名、年份、地区、类型或标签，可快速定位影片详情页。</p>
+</section>
+<section class="filter-panel" aria-label="影片筛选">
+  <div class="search-line">
+    <input type="search" data-search-input placeholder="搜索片名、地区、类型、标签" aria-label="搜索影片">
+    <button type="button" data-clear-search>清空</button>
+  </div>
+  <div class="select-line">
+    <label>
+      <span>年份</span>
+      <select data-filter="year">
+        <option value="">全部年份</option>
+          <option value="2028">2028</option>
+          <option value="2027">2027</option>
+          <option value="2026">2026</option>
+          <option value="2025">2025</option>
+          <option value="2024">2024</option>
+          <option value="2023">2023</option>
+          <option value="2022">2022</option>
+          <option value="2021">2021</option>
+          <option value="2020">2020</option>
+          <option value="2019">2019</option>
+          <option value="2018">2018</option>
+          <option value="2016">2016</option>
+          <option value="2015">2015</option>
+          <option value="2014">2014</option>
+          <option value="2008">2008</option>
+          <option value="2002">2002</option>
+          <option value="2000">2000</option>
+          <option value="1997">1997</option>
+          <option value="1995">1995</option>
+      </select>
+    </label>
+    <label>
+      <span>地区</span>
+      <select data-filter="region">
+        <option value="">全部地区</option>
+          <option value="中国">中国</option>
+          <option value="中国台湾">中国台湾</option>
+          <option value="中国大陆">中国大陆</option>
+          <option value="中国香港">中国香港</option>
+          <option value="丹麦, 瑞典">丹麦, 瑞典</option>
+          <option value="印度 / 美国">印度 / 美国</option>
+          <option value="意大利">意大利</option>
+          <option value="意大利 / 美国">意大利 / 美国</option>
+          <option value="日本">日本</option>
+          <option value="法国">法国</option>
+          <option value="泰国">泰国</option>
+          <option value="澳大利亚">澳大利亚</option>
+          <option value="瑞典 / 丹麦">瑞典 / 丹麦</option>
+          <option value="美国">美国</option>
+          <option value="美国 / 中国大陆">美国 / 中国大陆</option>
+          <option value="美国 / 加拿大">美国 / 加拿大</option>
+          <option value="美国 / 德国">美国 / 德国</option>
+          <option value="英国">英国</option>
+          <option value="葡萄牙">葡萄牙</option>
+          <option value="西班牙">西班牙</option>
+          <option value="韩国">韩国</option>
+          <option value="香港 / 泰国">香港 / 泰国</option>
+      </select>
+    </label>
+    <label>
+      <span>类型</span>
+      <select data-filter="type">
+        <option value="">全部类型</option>
+          <option value="TV 剧集">TV 剧集</option>
+          <option value="剧情 / 惊悚 / 犯罪">剧情 / 惊悚 / 犯罪</option>
+          <option value="剧集">剧集</option>
+          <option value="动漫">动漫</option>
+          <option value="动画剧集">动画剧集</option>
+          <option value="动画电影">动画电影</option>
+          <option value="电影">电影</option>
+          <option value="电影/动画">电影/动画</option>
+          <option value="电视剧">电视剧</option>
+          <option value="网剧">网剧</option>
+      </select>
+    </label>
+      <label>
+        <span>栏目</span>
+        <select data-filter="category">
+          <option value="">全部栏目</option>
+          <option value="asian-selection">亚洲精选</option>
+          <option value="hd-theater">高清剧场</option>
+          <option value="hot-movies">热门电影</option>
+          <option value="classic-list">经典片单</option>
+          <option value="city-life">都市生活</option>
+          <option value="mystery">悬疑推理</option>
+          <option value="action-adventure">动作冒险</option>
+          <option value="romance-healing">爱情治愈</option>
+          <option value="sci-fi-fantasy">科幻奇幻</option>
+          <option value="animation-documentary">动画纪实</option>
+        </select>
+      </label>
+  </div>
+  <p class="filter-count" data-filter-count>正在显示全部影片</p>
+</section>
+<section class="content-section no-top-padding">
+  <div class="ranking-list" data-card-list>
+<article class="ranking-row searchable-card" data-title="未来密码46" data-year="2026" data-region="美国 / 德国" data-type="剧集" data-genre="科幻、惊悚" data-tags="量子计算 预言 幸存者 乌托邦" data-category="mystery">
+  <a class="ranking-cover" href="movies/movie-1353.html">
+    <img src="3.jpg" alt="未来密码46封面" loading="lazy">
+    <span>1</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-1353.html">未来密码46</a>
+    <p>在并不遥远的2046年，全球顶尖量子计算机“God-46”突然向全人类公布了一条不可更改的预测：人类文明将在1095天后因“沉默海啸”彻底消亡。与预测一同公布的，还有一个匪夷所思的指令——“火”。世界…</p>
+    <div class="ranking-meta">
+      <span>2026</span>
+      <span>美国 / 德国</span>
+      <span>剧集</span>
+      <span>557.6万 播放</span>
+      <span>热度指数 168</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="天山紧急出动" data-year="2024" data-region="中国大陆" data-type="电影" data-genre="动作 / 灾难 / 冒险" data-tags="雪崩救援 极限登山 黄金救援时间 无人机" data-category="romance-healing">
+  <a class="ranking-cover" href="movies/movie-1223.html">
+    <img src="23.jpg" alt="天山紧急出动封面" loading="lazy">
+    <span>2</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-1223.html">天山紧急出动</a>
+    <p>一场突如其来的强震在天山引发巨大雪崩，将来自五个国家的顶尖登山者困在海拔7000米以上的“绝望坡”。暴风雪即将席卷，氧气存量仅剩12小时。新疆消防救援总队特勤大队临危受命，由经验丰富的队长巴图尔带队…</p>
+    <div class="ranking-meta">
+      <span>2024</span>
+      <span>中国大陆</span>
+      <span>电影</span>
+      <span>586.8万 播放</span>
+      <span>热度指数 167</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="娜塔丽·伍德之谜" data-year="2025" data-region="美国" data-type="电影" data-genre="传记 / 悬疑" data-tags="旧好莱坞 溺水 重查旧案 女性视角" data-category="animation-documentary">
+  <a class="ranking-cover" href="movies/movie-0756.html">
+    <img src="6.jpg" alt="娜塔丽·伍德之谜封面" loading="lazy">
+    <span>3</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-0756.html">娜塔丽·伍德之谜</a>
+    <p>1981年娜塔丽·伍德溺亡事件被定性为意外。四十年后，调查记者玛雅获得一份匿名录音带，其中提及当晚船上存在激烈争吵。玛雅走访当年船员、警方、影评人，发现证词前后矛盾。随着调查深入，她不仅触及好莱坞黄金…</p>
+    <div class="ranking-meta">
+      <span>2025</span>
+      <span>美国</span>
+      <span>电影</span>
+      <span>583.7万 播放</span>
+      <span>热度指数 167</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="最佳基友闯死关" data-year="2024" data-region="美国" data-type="电影" data-genre="动作，喜剧" data-tags="密室逃生 兄弟情 沙雕 高智商" data-category="classic-list">
+  <a class="ranking-cover" href="movies/movie-0355.html">
+    <img src="55.jpg" alt="最佳基友闯死关封面" loading="lazy">
+    <span>4</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-0355.html">最佳基友闯死关</a>
+    <p>游戏设计师阿宅和程序员胖仔是大学死党，两人最大的特长是打游戏和吐槽。某天他们被神秘组织绑架，丢进一个真实的“死亡密室”——12小时内通关7个致命房间，否则全员（包括其他9名玩家）都会死。其他玩家都是特…</p>
+    <div class="ranking-meta">
+      <span>2024</span>
+      <span>美国</span>
+      <span>电影</span>
+      <span>572.9万 播放</span>
+      <span>热度指数 167</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="花青歌" data-year="2023" data-region="中国大陆" data-type="网剧" data-genre="古装、悬疑、爱情" data-tags="穿越 探案 契约婚姻 甜虐 身份互换" data-category="action-adventure">
+  <a class="ranking-cover" href="movies/movie-1354.html">
+    <img src="4.jpg" alt="花青歌封面" loading="lazy">
+    <span>5</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-1354.html">花青歌</a>
+    <p>现代女法医花青歌意外穿越到文献无考的朝代“苍梧”，成了即将和亲北狄的软弱公主。为扭转命运，她与传闻中嗜血的北狄间谍头目、亦是苍梧七皇子签订契约婚姻：他助她逃脱和亲，她利用现代法医知识为他破解悬案、铲除…</p>
+    <div class="ranking-meta">
+      <span>2023</span>
+      <span>中国大陆</span>
+      <span>网剧</span>
+      <span>564.5万 播放</span>
+      <span>热度指数 167</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="恋爱暴击" data-year="2024" data-region="中国大陆" data-type="电视剧" data-genre="爱情，喜剧，动作" data-tags="游戏NPC 格斗女 软萌男" data-category="mystery">
+  <a class="ranking-cover" href="movies/movie-0887.html">
+    <img src="137.jpg" alt="恋爱暴击封面" loading="lazy">
+    <span>6</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-0887.html">恋爱暴击</a>
+    <p>街机格斗游戏《暴击女王》里的角色“铁拳阿丽”因bug穿越到现实，成了一个被甲方虐的卑微策划师林萌萌。系统提示：要想回到游戏，她必须让敌方大BOSS——腹黑总裁陆寒州（原型是游戏里被她暴揍万次的最终反派…</p>
+    <div class="ranking-meta">
+      <span>2024</span>
+      <span>中国大陆</span>
+      <span>电视剧</span>
+      <span>561.4万 播放</span>
+      <span>热度指数 167</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="深居在内" data-year="2025" data-region="印度 / 美国" data-type="电影" data-genre="恐怖 / 心理惊悚" data-tags="寄宿 邪教 地下密室" data-category="animation-documentary">
+  <a class="ranking-cover" href="movies/movie-1820.html">
+    <img src="20.jpg" alt="深居在内封面" loading="lazy">
+    <span>7</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-1820.html">深居在内</a>
+    <p>社恐程序员米拉租下了一间号称“全AI管理”的单身公寓，以逃离社交。起初她享受智能灯光、语音助手和自动温控带来的安全感。但渐渐地，她发现系统总在她睡前播放同一首摇篮曲，冰箱会莫名多出过期牛奶，扫地机器人…</p>
+    <div class="ranking-meta">
+      <span>2025</span>
+      <span>印度 / 美国</span>
+      <span>电影</span>
+      <span>560.7万 播放</span>
+      <span>热度指数 167</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="怪物" data-year="2023" data-region="日本" data-type="电影" data-genre="剧情 / 悬疑" data-tags="多视角 校园霸凌 善恶模糊" data-category="hot-movies">
+  <a class="ranking-cover" href="movies/movie-0486.html">
+    <img src="36.jpg" alt="怪物封面" loading="lazy">
+    <span>8</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-0486.html">怪物</a>
+    <p>一场公寓大火后，男孩麦野凑行为异常。母亲坚信他被班主任保利施暴，学校却态度暧昧。保利坚称自己才是受害者，被学生诬陷。故事分三章：母亲视角的愤怒、老师视角的无辜、孩子视角的暗语。最终揭示，凑与另一男孩星…</p>
+    <div class="ranking-meta">
+      <span>2023</span>
+      <span>日本</span>
+      <span>电影</span>
+      <span>550.6万 播放</span>
+      <span>热度指数 167</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="童子也是基" data-year="2024" data-region="美国" data-type="电影" data-genre="喜剧、同性、青春" data-tags="出柜 童子军 公路喜剧 自我认同" data-category="hot-movies">
+  <a class="ranking-cover" href="movies/movie-1226.html">
+    <img src="26.jpg" alt="童子也是基封面" loading="lazy">
+    <span>9</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-1226.html">童子也是基</a>
+    <p>高中生丹尼是“鹰级童子军”的有力竞争者，但他有个秘密：他喜欢同队的男孩，而他的父亲是极度保守的领队。为了拿到最后一枚勋章，丹尼被分配了一个几乎不可能完成的任务：和全队最恐同、最野蛮的刺头学员凯文组队…</p>
+    <div class="ranking-meta">
+      <span>2024</span>
+      <span>美国</span>
+      <span>电影</span>
+      <span>614.7万 播放</span>
+      <span>热度指数 166</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="这份恋情有罪吗" data-year="2018" data-region="日本" data-type="剧集" data-genre="爱情, 悬疑, 律政" data-tags="陪审团 禁断恋 法庭 道德 辩论" data-category="action-adventure">
+  <a class="ranking-cover" href="movies/movie-0693.html">
+    <img src="93.jpg" alt="这份恋情有罪吗封面" loading="lazy">
+    <span>10</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-0693.html">这份恋情有罪吗</a>
+    <p>新晋法官小樱在负责一桩民事赔偿案时，原告要求被告赔偿因其出轨导致的精神损失。案件本身并不复杂，但陪审团里一位温文尔雅的已婚男士引起了小樱的注意。随着庭审的深入，小樱发现自己越来越无法客观看待证据，因为…</p>
+    <div class="ranking-meta">
+      <span>2018</span>
+      <span>日本</span>
+      <span>剧集</span>
+      <span>612.1万 播放</span>
+      <span>热度指数 166</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="爆发2024" data-year="2024" data-region="美国" data-type="电影" data-genre="科幻 / 灾难 / 惊悚" data-tags="病毒 封锁 家庭 极限生存" data-category="city-life">
+  <a class="ranking-cover" href="movies/movie-0890.html">
+    <img src="140.jpg" alt="爆发2024封面" loading="lazy">
+    <span>11</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-0890.html">爆发2024</a>
+    <p>2024年，一种代号“火花”的病毒在全球蔓延。感染途径不是飞沫或血液，而是负面情绪——愤怒、恐惧、悲伤都会导致体温瞬间飙升至自燃点。政府颁布“快乐强制令”：所有人必须保持微笑，任何哭泣或争吵都将被隔离…</p>
+    <div class="ranking-meta">
+      <span>2024</span>
+      <span>美国</span>
+      <span>电影</span>
+      <span>589.3万 播放</span>
+      <span>热度指数 166</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="感谢生活" data-year="2024" data-region="中国大陆" data-type="剧集" data-genre="家庭喜剧" data-tags="治愈 邻里 轻喜剧 平凡英雄 温暖" data-category="animation-documentary">
+  <a class="ranking-cover" href="movies/movie-0022.html">
+    <img src="22.jpg" alt="感谢生活封面" loading="lazy">
+    <span>12</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-0022.html">感谢生活</a>
+    <p>畅销书作家顾磊陷入了严重的创作瓶颈，他写出来的全是悬浮的精英生活，被读者痛批“不接地气”。经纪人为让他体验生活，把他骗进了一个即将拆迁的老旧小区——幸福里。顾磊一开始看谁都不顺眼：每天在楼道里唱戏的退…</p>
+    <div class="ranking-meta">
+      <span>2024</span>
+      <span>中国大陆</span>
+      <span>剧集</span>
+      <span>575.4万 播放</span>
+      <span>热度指数 166</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="核力突破" data-year="2024" data-region="美国" data-type="电影" data-genre="科幻, 动作, 灾难" data-tags="核能 极限 拯救" data-category="romance-healing">
+  <a class="ranking-cover" href="movies/movie-1954.html">
+    <img src="4.jpg" alt="核力突破封面" loading="lazy">
+    <span>13</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-1954.html">核力突破</a>
+    <p>弗吉尼亚核电站发生冷却剂泄漏，自动系统全部失效。如果不在两小时内手动插入控制棒，方圆百里将沦为废土。但核心区的辐射剂量已经达到致死水平的十倍，所有救援人员都无法进入。唯一掌握老式手动插入技术的人是工程…</p>
+    <div class="ranking-meta">
+      <span>2024</span>
+      <span>美国</span>
+      <span>电影</span>
+      <span>566.3万 播放</span>
+      <span>热度指数 166</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="面对面 第二季" data-year="2026" data-region="西班牙" data-type="剧集" data-genre="悬疑, 心理惊悚, 犯罪" data-tags="审讯室 正反打镜头 双时间线" data-category="mystery">
+  <a class="ranking-cover" href="movies/movie-0687.html">
+    <img src="87.jpg" alt="面对面 第二季封面" loading="lazy">
+    <span>14</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-0687.html">面对面 第二季</a>
+    <p>七名嫌疑人因不同案件被带到警局同一层楼的七间透明审讯室。他们能看到彼此，但听不到声音。一个神秘屏幕突然亮起，播放了警察被杀当天的七段不同角度的监控。奇怪的是，每一个人的画面里，自己都不是凶手。但随着审…</p>
+    <div class="ranking-meta">
+      <span>2026</span>
+      <span>西班牙</span>
+      <span>剧集</span>
+      <span>562.7万 播放</span>
+      <span>热度指数 166</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="傻瓜天堂" data-year="2025" data-region="中国大陆" data-type="电影" data-genre="科幻, 喜剧" data-tags="脑机接口 虚拟世界 讽刺 乌托邦" data-category="asian-selection">
+  <a class="ranking-cover" href="movies/movie-1826.html">
+    <img src="26.jpg" alt="傻瓜天堂封面" loading="lazy">
+    <span>15</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-1826.html">傻瓜天堂</a>
+    <p>2068年，科技巨头“极乐世界”推出脑机接口“天堂门”，人类可将意识上传至虚拟乌托邦。快递员陈默贷款购买基础套餐，进入天堂后却发现：阳光沙滩要开会员、与已故亲人见面按分钟计费、连每天的“快乐情绪”都是…</p>
+    <div class="ranking-meta">
+      <span>2025</span>
+      <span>中国大陆</span>
+      <span>电影</span>
+      <span>616.5万 播放</span>
+      <span>热度指数 165</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="最后的杜安斯" data-year="2023" data-region="法国" data-type="电影" data-genre="剧情，历史，家庭" data-tags="贵族 一战 遗产 秘密" data-category="mystery">
+  <a class="ranking-cover" href="movies/movie-0492.html">
+    <img src="42.jpg" alt="最后的杜安斯封面" loading="lazy">
+    <span>16</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-0492.html">最后的杜安斯</a>
+    <p>1913年，杜安斯家族的传世预言书宣称：当家族最后一代人的血在战场上流尽，宝藏之门便会开启。年迈的侯爵召集全体成员回到即将被征用为战地医院的城堡。家族成员各怀鬼胎：长子想变卖地产，私生女试图认祖归宗…</p>
+    <div class="ranking-meta">
+      <span>2023</span>
+      <span>法国</span>
+      <span>电影</span>
+      <span>606.5万 播放</span>
+      <span>热度指数 165</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="冰冻星球" data-year="2025" data-region="美国 / 加拿大" data-type="剧集" data-genre="科幻 / 悬疑 / 冒险" data-tags="末日 冰冻 科考站 外星生命" data-category="asian-selection">
+  <a class="ranking-cover" href="movies/movie-0958.html">
+    <img src="58.jpg" alt="冰冻星球封面" loading="lazy">
+    <span>17</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-0958.html">冰冻星球</a>
+    <p>2050年，南极冰盖下钻探到百万年前的古菌层。古菌接触空气后释放出“冰暴病毒”：感染者会在0.1秒内被冰晶贯穿细胞，但意识永远停留在最后一秒。科考站8名科学家相继感染，只有生物学家陈远和通讯官安娜幸存…</p>
+    <div class="ranking-meta">
+      <span>2025</span>
+      <span>美国 / 加拿大</span>
+      <span>剧集</span>
+      <span>602.6万 播放</span>
+      <span>热度指数 165</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="京城学校：失踪的少女们" data-year="2025" data-region="韩国" data-type="电影" data-genre="悬疑、惊悚、剧情" data-tags="女子高中 阶级压迫 集体失踪" data-category="asian-selection">
+  <a class="ranking-cover" href="movies/movie-1490.html">
+    <img src="140.jpg" alt="京城学校：失踪的少女们封面" loading="lazy">
+    <span>18</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-1490.html">京城学校：失踪的少女们</a>
+    <p>记者姜秀珍收到一封匿名信，寄信人自称是京城女高 1998 年的毕业生，信中只写着一句话：“我们班当年转学的三个同学，其实都死在校长室地下。”秀珍起初以为是恶作剧，但在查阅资料后发现，京城女高在过去二十…</p>
+    <div class="ranking-meta">
+      <span>2025</span>
+      <span>韩国</span>
+      <span>电影</span>
+      <span>591.1万 播放</span>
+      <span>热度指数 165</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="不要告诉爸爸" data-year="2025" data-region="韩国" data-type="电影" data-genre="喜剧 / 家庭" data-tags="搞笑 秘密 父女 反转" data-category="city-life">
+  <a class="ranking-cover" href="movies/movie-0090.html">
+    <img src="90.jpg" alt="不要告诉爸爸封面" loading="lazy">
+    <span>19</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-0090.html">不要告诉爸爸</a>
+    <p>女儿金恩雅被大公司裁员后，不敢告诉失业在家的父亲，每天依然西装革履地出门，在写字楼附近的咖啡厅假装上班。而她的父亲金父，其实也被公司劝退了三个月，同样每天假装出门上班，在同一个写字楼的图书馆里打发时间…</p>
+    <div class="ranking-meta">
+      <span>2025</span>
+      <span>韩国</span>
+      <span>电影</span>
+      <span>588.8万 播放</span>
+      <span>热度指数 165</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="度假村兼职" data-year="2023" data-region="中国大陆" data-type="电影" data-genre="悬疑惊悚" data-tags="孤岛 怪谈 打工奇遇" data-category="classic-list">
+  <a class="ranking-cover" href="movies/movie-0688.html">
+    <img src="88.jpg" alt="度假村兼职封面" loading="lazy">
+    <span>20</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-0688.html">度假村兼职</a>
+    <p>女大学生陈小禾为了偿还助学贷款，应聘到一个与世隔绝的豪华度假村做暑期兼职。起初她只觉工作轻松、待遇优厚，但很快察觉到异样：每个离居住客留下的感谢视频都说着完全相同的台词，而员工宿舍里一间从未打开的门后…</p>
+    <div class="ranking-meta">
+      <span>2023</span>
+      <span>中国大陆</span>
+      <span>电影</span>
+      <span>569.6万 播放</span>
+      <span>热度指数 165</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="你是我的菜" data-year="2024" data-region="中国台湾" data-type="剧集" data-genre="爱情 / 喜剧" data-tags="美食 欢喜冤家 傲娇主厨 味觉天才" data-category="city-life">
+  <a class="ranking-cover" href="movies/movie-1621.html">
+    <img src="121.jpg" alt="你是我的菜封面" loading="lazy">
+    <span>21</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-1621.html">你是我的菜</a>
+    <p>米其林三星主厨江一舟因一场意外失去味觉，他靠精准的计时和温度控制维持着餐厅运转，但食物没了灵魂。直到他遇到来应聘甜点学徒的林小葵——她有通感症，能“看见”声音的颜色，也能“尝出”食材的情绪（例如番茄会…</p>
+    <div class="ranking-meta">
+      <span>2024</span>
+      <span>中国台湾</span>
+      <span>剧集</span>
+      <span>568.9万 播放</span>
+      <span>热度指数 165</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="这个年纪还能当大侠吗" data-year="2024" data-region="中国大陆" data-type="剧集" data-genre="喜剧、动作、奇幻" data-tags="中年危机 武侠梦 热血 沙雕 逆袭" data-category="asian-selection">
+  <a class="ranking-cover" href="movies/movie-0221.html">
+    <img src="71.jpg" alt="这个年纪还能当大侠吗封面" loading="lazy">
+    <span>22</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-0221.html">这个年纪还能当大侠吗</a>
+    <p>45岁的程序员王建国突然被公司“优化”，拿着微薄的赔偿金，面对房贷和青春期儿子的压力，他感到人生无望。年轻时是个武侠迷的他，为了发泄情绪，开始在公园里教几个孩子“打把势”，没想到却被拍成视频意外走红…</p>
+    <div class="ranking-meta">
+      <span>2024</span>
+      <span>中国大陆</span>
+      <span>剧集</span>
+      <span>566.5万 播放</span>
+      <span>热度指数 165</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="老鼠也移民 4" data-year="2025" data-region="美国" data-type="动画电影" data-genre="喜剧, 冒险, 家庭" data-tags="老鼠 移民 太空 欢乐 友情" data-category="sci-fi-fantasy">
+  <a class="ranking-cover" href="movies/movie-0286.html">
+    <img src="136.jpg" alt="老鼠也移民 4封面" loading="lazy">
+    <span>23</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-0286.html">老鼠也移民 4</a>
+    <p>在成功融入人类城市后，老鼠移民罗德尼一家又遇到了新问题：城市里的奶酪因转基因污染越来越少。天才鼠小弟雷米从电视上看到，火星探测器发现了地下有巨大的奶酪储量。于是，全家人决定再次“移民”，溜进NASA的…</p>
+    <div class="ranking-meta">
+      <span>2025</span>
+      <span>美国</span>
+      <span>动画电影</span>
+      <span>551.9万 播放</span>
+      <span>热度指数 165</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="鬼灯的冷彻第二季 其之二" data-year="2018" data-region="日本" data-type="TV 剧集" data-genre="喜剧 / 奇幻 / 神魔" data-tags="地狱公务员 黑色幽默 职场 阎王" data-category="action-adventure">
+  <a class="ranking-cover" href="movies/movie-1427.html">
+    <img src="77.jpg" alt="鬼灯的冷彻第二季 其之二封面" loading="lazy">
+    <span>24</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-1427.html">鬼灯的冷彻第二季 其之二</a>
+    <p>本季延续了地狱第一辅佐官鬼灯那冷酷无情却又莫名高效的办事风格。随着第二季下半部分的到来，地狱的观光客和投诉信都成倍增长。鬼灯不仅要处理来自八大地狱的行政纠纷，还要接待前来考察的希腊冥王哈迪斯。面对西方…</p>
+    <div class="ranking-meta">
+      <span>2018</span>
+      <span>日本</span>
+      <span>TV 剧集</span>
+      <span>619.6万 播放</span>
+      <span>热度指数 164</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="杀警" data-year="2024" data-region="法国" data-type="剧情 / 惊悚 / 犯罪" data-genre="剧情，惊悚，犯罪" data-tags="警察腐败 卧底 道德困境 真实事件改编 心理压迫" data-category="animation-documentary">
+  <a class="ranking-cover" href="movies/movie-1624.html">
+    <img src="124.jpg" alt="杀警封面" loading="lazy">
+    <span>25</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-1624.html">杀警</a>
+    <p>老警察文森特的儿子被黑帮绑架，条件是他必须在48小时内杀死一名即将出庭作证的警官。文森特被迫执行，却在过程中发现目标警员长期向黑帮出售情报，导致多名线人惨死。他陷入两难：不动手则儿子死，动手则成为杀人…</p>
+    <div class="ranking-meta">
+      <span>2024</span>
+      <span>法国</span>
+      <span>剧情 / 惊悚 / 犯罪</span>
+      <span>596.8万 播放</span>
+      <span>热度指数 164</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="纸上城市" data-year="2015" data-region="美国" data-type="电影" data-genre="爱情， 悬疑， 青春" data-tags="约翰·格林 公路 追寻 破格 成长" data-category="asian-selection">
+  <a class="ranking-cover" href="movies/movie-1086.html">
+    <img src="36.jpg" alt="纸上城市封面" loading="lazy">
+    <span>26</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-1086.html">纸上城市</a>
+    <p>高中毕业前夜，一直暗恋隔壁女孩玛戈的昆汀，发现她破窗而入，要求他帮忙完成一份报复清单。整夜疯狂后，玛戈消失了，只留下几个画着奇怪符号的地图。昆汀断定这是玛戈留给他的寻宝游戏。他和好友们开着破面包车，沿…</p>
+    <div class="ranking-meta">
+      <span>2015</span>
+      <span>美国</span>
+      <span>电影</span>
+      <span>545.3万 播放</span>
+      <span>热度指数 164</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="你知道吗，这是个秘密" data-year="2024" data-region="韩国" data-type="电影" data-genre="喜剧、悬疑" data-tags="小镇秘密 全员恶人 黑色幽默 聚会" data-category="sci-fi-fantasy">
+  <a class="ranking-cover" href="movies/movie-1285.html">
+    <img src="85.jpg" alt="你知道吗，这是个秘密封面" loading="lazy">
+    <span>27</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-1285.html">你知道吗，这是个秘密</a>
+    <p>寂静的海岛小镇上，一群看似和睦的中年人举办毕业二十周年同学会。身为心理医生的班长提议玩一个“坦白局”：所有人都把手机放在桌上，接下来的每一条短信、每一个电话都必须公放。起初只是关于婚外情和私房钱的尴尬…</p>
+    <div class="ranking-meta">
+      <span>2024</span>
+      <span>韩国</span>
+      <span>电影</span>
+      <span>543.5万 播放</span>
+      <span>热度指数 164</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="春色无边满杏林" data-year="2024" data-region="中国大陆" data-type="电视剧" data-genre="剧情 / 职场 / 爱情" data-tags="中医传承 医患故事 欢喜冤家 都市疗愈 文化自信" data-category="hot-movies">
+  <a class="ranking-cover" href="movies/movie-0218.html">
+    <img src="68.jpg" alt="春色无边满杏林封面" loading="lazy">
+    <span>28</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-0218.html">春色无边满杏林</a>
+    <p>从小在美国长大的外科医生苏冉，因医院交流项目被派回国内，却被“发配”到一家百年老字号中医馆“杏林堂”进行为期一年的学习。她坚信现代医学，认为中医是“玄学”，与中医馆内佛系又毒舌的年轻掌门人林清玄针锋相…</p>
+    <div class="ranking-meta">
+      <span>2024</span>
+      <span>中国大陆</span>
+      <span>电视剧</span>
+      <span>538.6万 播放</span>
+      <span>热度指数 164</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="最后之言" data-year="2025" data-region="日本" data-type="电影" data-genre="剧情、家庭" data-tags="遗言代笔 临终关怀 和解" data-category="sci-fi-fantasy">
+  <a class="ranking-cover" href="movies/movie-1151.html">
+    <img src="101.jpg" alt="最后之言封面" loading="lazy">
+    <span>29</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-1151.html">最后之言</a>
+    <p>祐介幼年因心理创伤失语，却练就了极其敏锐的观察力。他开办了一家“最后之言”代笔事务所，客户是那些病重或临终、但家属听不懂他们“真意”的人。一位癌症晚期的父亲每天只说“想吃咖喱”，其实是想见年轻时因反对…</p>
+    <div class="ranking-meta">
+      <span>2025</span>
+      <span>日本</span>
+      <span>电影</span>
+      <span>537.9万 播放</span>
+      <span>热度指数 164</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="欢颜2023" data-year="2023" data-region="中国大陆" data-type="剧集" data-genre="剧情, 悬疑, 年代" data-tags="抗战 女性 谍战 三位一体 伪装" data-category="action-adventure">
+  <a class="ranking-cover" href="movies/movie-0150.html">
+    <img src="150.jpg" alt="欢颜2023封面" loading="lazy">
+    <span>30</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-0150.html">欢颜2023</a>
+    <p>1943年的上海，孤岛时期即将结束。抗日组织得到情报，大汉奸丁默村将在百乐门舞厅举行寿宴。组织精心安排了三名女特工执行刺杀，有趣的是，这三人都长着一张极为相似的脸：一个是舞厅头牌歌女，一个是教会医院的…</p>
+    <div class="ranking-meta">
+      <span>2023</span>
+      <span>中国大陆</span>
+      <span>剧集</span>
+      <span>525.3万 播放</span>
+      <span>热度指数 164</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="维京传奇第五季" data-year="2024" data-region="美国 / 加拿大" data-type="电视剧" data-genre="动作 / 历史 / 战争" data-tags="维京 帝国崩塌 女战士 宗教冲突" data-category="asian-selection">
+  <a class="ranking-cover" href="movies/movie-1627.html">
+    <img src="127.jpg" alt="维京传奇第五季封面" loading="lazy">
+    <span>31</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-1627.html">维京传奇第五季</a>
+    <p>第五季开篇，无骨者伊瓦尔在基辅罗斯建立流亡政权，而铁臂比约恩被暗杀后，卡特加特陷入女武神拉葛莎与新生基督派的夺权内战。此时一支名为“灰烬行者”的黑人维京舰队从南方登陆，他们崇拜蛇神，用火药武器与毒药颠…</p>
+    <div class="ranking-meta">
+      <span>2024</span>
+      <span>美国 / 加拿大</span>
+      <span>电视剧</span>
+      <span>624.7万 播放</span>
+      <span>热度指数 163</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="魔法咪路咪路" data-year="2025" data-region="日本" data-type="动漫" data-genre="奇幻, 喜剧, 校园" data-tags="魔法少女 精灵 搞笑" data-category="classic-list">
+  <a class="ranking-cover" href="movies/movie-1160.html">
+    <img src="110.jpg" alt="魔法咪路咪路封面" loading="lazy">
+    <span>32</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-1160.html">魔法咪路咪路</a>
+    <p>高中生立花舞依成绩垫底、运动白痴，人生唯一的闪光点就是运气好。她在旧书店淘到一本召唤书，按指示画下魔法阵，结果召唤出来自精灵界的王子——咪路咪路。这位王子不仅矮小圆润，还是个只爱吃薯片和打游戏的超级家…</p>
+    <div class="ranking-meta">
+      <span>2025</span>
+      <span>日本</span>
+      <span>动漫</span>
+      <span>621.6万 播放</span>
+      <span>热度指数 163</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="魔窟" data-year="2025" data-region="中国大陆" data-type="剧集" data-genre="冒险 / 悬疑 / 动作" data-tags="洞穴探险 民间传说 机关解谜 小队群像" data-category="mystery">
+  <a class="ranking-cover" href="movies/movie-0292.html">
+    <img src="142.jpg" alt="魔窟封面" loading="lazy">
+    <span>33</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-0292.html">魔窟</a>
+    <p>网红探险队“深渊猎人”进入西南边境的“十八层魔窟”，传闻每层住着不腐尸骸和诅咒。队长老刁是前考古员，队员包括地质学宅女、退伍侦察兵、和想火的作精主播。第一层是“拔舌狱”，遍地石刻人舌机关；第二层“剪刀…</p>
+    <div class="ranking-meta">
+      <span>2025</span>
+      <span>中国大陆</span>
+      <span>剧集</span>
+      <span>607.7万 播放</span>
+      <span>热度指数 163</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="五百万美元的大丈夫" data-year="2028" data-region="韩国" data-type="电影" data-genre="剧情、喜剧" data-tags="中年危机 彩票 黑色喜剧 家庭关系" data-category="romance-healing">
+  <a class="ranking-cover" href="movies/movie-1358.html">
+    <img src="8.jpg" alt="五百万美元的大丈夫封面" loading="lazy">
+    <span>34</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-1358.html">五百万美元的大丈夫</a>
+    <p>老金是标准的中年loser，在公司被上司辱骂，在家被妻子无视，连儿子都看不起他。一天，他买的彩票中了五百万美元。狂喜过后，他陷入了巨大的恐惧：如果告诉家人，妻子肯定会为了钱不离婚；儿子会变本加厉啃老…</p>
+    <div class="ranking-meta">
+      <span>2028</span>
+      <span>韩国</span>
+      <span>电影</span>
+      <span>605.7万 播放</span>
+      <span>热度指数 163</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="男男女女" data-year="2023" data-region="中国香港" data-type="电影" data-genre="喜剧，爱情，都市" data-tags="多线叙事 性别互换 相亲 都市症候 荒诞" data-category="classic-list">
+  <a class="ranking-cover" href="movies/movie-1758.html">
+    <img src="108.jpg" alt="男男女女封面" loading="lazy">
+    <span>35</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-1758.html">男男女女</a>
+    <p>香港一间地下诊所推出神奇服务：异性伴侣可交换身体48小时。五对截然不同的男女报名：新婚燕尔的小夫妻、冷战中的老夫老妻、女强人配小奶狗、男同与女同组成的形婚搭档、以及一对准备离婚的死对头。交换身体后，他…</p>
+    <div class="ranking-meta">
+      <span>2023</span>
+      <span>中国香港</span>
+      <span>电影</span>
+      <span>602.4万 播放</span>
+      <span>热度指数 163</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="妈妈回来" data-year="2024" data-region="中国台湾" data-type="电影" data-genre="家庭 / 剧情" data-tags="失智 母女 和解 时光倒错 日常" data-category="romance-healing">
+  <a class="ranking-cover" href="movies/movie-1291.html">
+    <img src="91.jpg" alt="妈妈回来封面" loading="lazy">
+    <span>36</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-1291.html">妈妈回来</a>
+    <p>舞蹈家若男从纽约回台北照顾失智的母亲秀枝。秀枝每天都把若男认作十八岁的自己，拉着她练舞、骂当年的外婆、抱怨错过的初恋。若男起初崩溃，后来索性扮演“年轻秀枝”，听母亲讲从未提起的往事。她发现母亲曾怀着一…</p>
+    <div class="ranking-meta">
+      <span>2024</span>
+      <span>中国台湾</span>
+      <span>电影</span>
+      <span>599.3万 播放</span>
+      <span>热度指数 163</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="危险飞行" data-year="2022" data-region="美国" data-type="电影" data-genre="悬疑 / 灾难" data-tags="空中密闭空间 记忆碎片 心理惊悚 反转结局" data-category="animation-documentary">
+  <a class="ranking-cover" href="movies/movie-1357.html">
+    <img src="7.jpg" alt="危险飞行封面" loading="lazy">
+    <span>37</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-1357.html">危险飞行</a>
+    <p>一架红眼航班在太平洋上空遭遇乱流。副机长布莱恩从昏迷中醒来，发现驾驶舱玻璃碎裂，机长已经死亡。更诡异的是，舱内几十名乘客全部陷入了深度昏迷，怎么也叫不醒。在他试图联系地面塔台时，收到了一个奇怪的加密信…</p>
+    <div class="ranking-meta">
+      <span>2022</span>
+      <span>美国</span>
+      <span>电影</span>
+      <span>591.6万 播放</span>
+      <span>热度指数 163</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="拉斯维加斯三日游" data-year="2021" data-region="美国" data-type="电影" data-genre="喜剧 / 犯罪" data-tags="赌城 疯狂一夜 兄弟会 乌龙" data-category="action-adventure">
+  <a class="ranking-cover" href="movies/movie-0757.html">
+    <img src="7.jpg" alt="拉斯维加斯三日游封面" loading="lazy">
+    <span>38</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-0757.html">拉斯维加斯三日游</a>
+    <p>会计师阿呆、阿瓜和阿笨是三人是最无聊的“书呆子”。为了给即将结婚的阿呆办最后的单身派对，三人来到拉斯维加斯。刚下飞机，他们就因为酒劲上头，误打误撞将一辆停在路边的黑色厢式货车当成了酒店的接驳巴士。他们…</p>
+    <div class="ranking-meta">
+      <span>2021</span>
+      <span>美国</span>
+      <span>电影</span>
+      <span>589.8万 播放</span>
+      <span>热度指数 163</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="军情五处：利益之争" data-year="2024" data-region="英国" data-type="电影" data-genre="动作 / 惊悚 / 谍战" data-tags="特工对决 政治阴谋 权力游戏" data-category="animation-documentary">
+  <a class="ranking-cover" href="movies/movie-1823.html">
+    <img src="23.jpg" alt="军情五处：利益之争封面" loading="lazy">
+    <span>39</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-1823.html">军情五处：利益之争</a>
+    <p>经验丰富的军情五处特工汤姆·布莱克在即将退休之际，偶然截获了一段看似毫无意义的古老密码。凭借多年的直觉，他破译了密码，结果令他毛骨悚然：即将在三天后举行就职典礼的候任首相，真实身份是敌国三十年前精心安…</p>
+    <div class="ranking-meta">
+      <span>2024</span>
+      <span>英国</span>
+      <span>电影</span>
+      <span>587.8万 播放</span>
+      <span>热度指数 163</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="徐老师的故事" data-year="2024" data-region="中国" data-type="电影" data-genre="剧情" data-tags="乡村教师 教育 奉献 真实感" data-category="classic-list">
+  <a class="ranking-cover" href="movies/movie-0423.html">
+    <img src="123.jpg" alt="徐老师的故事封面" loading="lazy">
+    <span>40</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-0423.html">徐老师的故事</a>
+    <p>故事改编自多位乡村教师的真实事迹。徐老师在云南山区教书三十年，因小儿麻痹症双腿萎缩，常年以轮椅和拐杖代步。山谷里的村落分散，为了不让一个孩子辍学，他每学期要“走”上百公里崎岖山路，挨家挨户劝学。他教过…</p>
+    <div class="ranking-meta">
+      <span>2024</span>
+      <span>中国</span>
+      <span>电影</span>
+      <span>585.4万 播放</span>
+      <span>热度指数 163</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="骑鲸少年" data-year="2026" data-region="中国大陆" data-type="电影" data-genre="剧情 / 奇幻 / 冒险 / 成长" data-tags="海洋传说 自闭症少年 鲸鱼语言 治愈之旅" data-category="mystery">
+  <a class="ranking-cover" href="movies/movie-1088.html">
+    <img src="38.jpg" alt="骑鲸少年封面" loading="lazy">
+    <span>41</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-1088.html">骑鲸少年</a>
+    <p>高三学生小海在三年前的一次潜水事故后患上了选择性缄默症，无法开口说话，却对海洋中鲸豚类的声音异常敏感。他在海洋生物论坛上匿名发布了一篇长文，精准预言了某头编号为“89-7”的座头鲸的迁徙路径，被中科院…</p>
+    <div class="ranking-meta">
+      <span>2026</span>
+      <span>中国大陆</span>
+      <span>电影</span>
+      <span>572.6万 播放</span>
+      <span>热度指数 163</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="柳生家族的阴谋" data-year="2023" data-region="日本" data-type="电影" data-genre="历史动作" data-tags="武士 复仇 家族斗争 剑术" data-category="hot-movies">
+  <a class="ranking-cover" href="movies/movie-0554.html">
+    <img src="104.jpg" alt="柳生家族的阴谋封面" loading="lazy">
+    <span>42</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-0554.html">柳生家族的阴谋</a>
+    <p>1615年大阪夏之阵后，德川幕府表面统一日本，实则暗流涌动。柳生家族作为幕府剑术指导，暗中策划“斩草计划”，意图清除所有前朝残余势力。家族次子柳生宗矩被指派潜入反对派领地，伪装成叛徒以诱敌深入。然而…</p>
+    <div class="ranking-meta">
+      <span>2023</span>
+      <span>日本</span>
+      <span>电影</span>
+      <span>563.2万 播放</span>
+      <span>热度指数 163</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="香港奇案粤语" data-year="2024" data-region="中国香港" data-type="剧集" data-genre="犯罪，悬疑" data-tags="真实改编 单元剧 港味 人性" data-category="asian-selection">
+  <a class="ranking-cover" href="movies/movie-0087.html">
+    <img src="87.jpg" alt="香港奇案粤语封面" loading="lazy">
+    <span>43</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-0087.html">香港奇案粤语</a>
+    <p>本剧选取香港五宗尘封多年的真实案件，每集一个故事。但视角不放在破案过程，而是深入凶手、受害者、家属和旁观者的内心世界。一个杀死高利贷者的老实人，一个为保护女儿而犯罪的单亲妈妈，一个被校园霸凌逼到绝境的…</p>
+    <div class="ranking-meta">
+      <span>2024</span>
+      <span>中国香港</span>
+      <span>剧集</span>
+      <span>560.1万 播放</span>
+      <span>热度指数 163</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="笑傲在明天粤语" data-year="2023" data-region="中国香港" data-type="剧集" data-genre="剧情, 喜剧" data-tags="港剧 职场 幽默 励志 友情" data-category="mystery">
+  <a class="ranking-cover" href="movies/movie-1419.html">
+    <img src="69.jpg" alt="笑傲在明天粤语封面" loading="lazy">
+    <span>44</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-1419.html">笑傲在明天粤语</a>
+    <p>在明天科技公司大规模裁员后，五位性格迥异的失业青年在茶餐厅偶遇。他们分别是愤世嫉俗的程序员、做过网红的前台、梦想当导演的剪辑师、只会吹牛的销售以及古板的会计师。走投无路之下，他们效仿古惑仔结拜，制定了…</p>
+    <div class="ranking-meta">
+      <span>2023</span>
+      <span>中国香港</span>
+      <span>剧集</span>
+      <span>549.1万 播放</span>
+      <span>热度指数 163</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="夜花火" data-year="2021" data-region="日本" data-type="电影" data-genre="爱情, 悬疑" data-tags="日式悬疑 烟花 夏日祭 时间循环 遗憾" data-category="mystery">
+  <a class="ranking-cover" href="movies/movie-0751.html">
+    <img src="1.jpg" alt="夜花火封面" loading="lazy">
+    <span>45</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-0751.html">夜花火</a>
+    <p>海边小镇每年夏夜举办烟花大会。今年，刚搬来的大学生拓也发现一个奇怪现象：当最大的一枚烟花“夜樱”绽放时，人群中总有一位穿浴衣的年轻女子会突然消失。所有人都说“没见过她”。只有卖章鱼烧的七旬老伯健次承认…</p>
+    <div class="ranking-meta">
+      <span>2021</span>
+      <span>日本</span>
+      <span>电影</span>
+      <span>534.0万 播放</span>
+      <span>热度指数 163</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="法蒂玛" data-year="2025" data-region="葡萄牙" data-type="电影" data-genre="剧情， 历史， 宗教" data-tags="真实事件改编 圣母显灵 信仰" data-category="asian-selection">
+  <a class="ranking-cover" href="movies/movie-0283.html">
+    <img src="133.jpg" alt="法蒂玛封面" loading="lazy">
+    <span>46</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-0283.html">法蒂玛</a>
+    <p>一战后期的葡萄牙法蒂玛小镇，十岁的露西亚和表弟妹在放羊时看到一位“比太阳还亮的女子”，自称玫瑰圣母，要求他们每月13日来此，并预言了战争结束和一场“大奇迹”。消息传开后，小镇被朝圣者挤满，地方政府却认…</p>
+    <div class="ranking-meta">
+      <span>2025</span>
+      <span>葡萄牙</span>
+      <span>电影</span>
+      <span>524.0万 播放</span>
+      <span>热度指数 163</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="快乐赢家" data-year="2026" data-region="意大利" data-type="电影" data-genre="喜剧 / 剧情" data-tags="彩票 社区 人性 黑色幽默 反转" data-category="sci-fi-fantasy">
+  <a class="ranking-cover" href="movies/movie-0681.html">
+    <img src="81.jpg" alt="快乐赢家封面" loading="lazy">
+    <span>47</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-0681.html">快乐赢家</a>
+    <p>那不勒斯一栋破旧公寓楼的十二个住户合买了一张彩票。开奖当晚，所有人都惊呆了——头奖，一亿两千万欧元。然而狂欢只持续了十分钟，他们就发现了一个致命问题：彩票被最谨慎的住户马尔科锁进了银行的保险柜，而银行…</p>
+    <div class="ranking-meta">
+      <span>2026</span>
+      <span>意大利</span>
+      <span>电影</span>
+      <span>506.8万 播放</span>
+      <span>热度指数 163</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="情场三杰" data-year="2014" data-region="中国大陆" data-type="剧集" data-genre="爱情 / 喜剧 / 都市" data-tags="三兄弟 恋爱教程 直男癌 成长" data-category="action-adventure">
+  <a class="ranking-cover" href="movies/movie-0694.html">
+    <img src="94.jpg" alt="情场三杰封面" loading="lazy">
+    <span>48</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-0694.html">情场三杰</a>
+    <p>大学时期，同寝室的张伟、刘波、杨硕因为帮学弟追女神成功，号称“情场三杰”。毕业后三人合开了一家“爱情军师”事务所。张伟擅长PUA套路，坚信“数据流恋爱”；刘波是个富二代暖男，信奉“金钱开道”；杨硕是个…</p>
+    <div class="ranking-meta">
+      <span>2014</span>
+      <span>中国大陆</span>
+      <span>剧集</span>
+      <span>618.3万 播放</span>
+      <span>热度指数 162</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="江湖了断" data-year="2024" data-region="中国香港" data-type="电影" data-genre="动作 / 犯罪 / 剧情" data-tags="黑帮 兄弟情 断舍离 卧底 悲剧" data-category="asian-selection">
+  <a class="ranking-cover" href="movies/movie-0426.html">
+    <img src="126.jpg" alt="江湖了断封面" loading="lazy">
+    <span>49</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-0426.html">江湖了断</a>
+    <p>阿鬼和阿发是屋邨里长大的好兄弟，一起加入社团“和联胜”。阿鬼聪明冷静，阿发冲动重情。五年后，阿鬼实际是警方的卧底，即将完成任务收网。阿发则因替老大顶罪出狱，被扶植成了新的“话事人”。收网行动前夜，阿鬼…</p>
+    <div class="ranking-meta">
+      <span>2024</span>
+      <span>中国香港</span>
+      <span>电影</span>
+      <span>613.3万 播放</span>
+      <span>热度指数 162</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="拯救大兵瑞恩" data-year="2025" data-region="美国" data-type="电影" data-genre="战争" data-tags="剧情 历史 兄弟情 重制" data-category="city-life">
+  <a class="ranking-cover" href="movies/movie-1359.html">
+    <img src="9.jpg" alt="拯救大兵瑞恩封面" loading="lazy">
+    <span>50</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-1359.html">拯救大兵瑞恩</a>
+    <p>2045年，第三次世界大战东欧战场。陆军游骑兵小队收到任务：拯救列兵瑞恩，他的四位兄长已全部战死，军方为防止舆论崩溃，决定强制将其撤离。小队穿越被AI无人机和生化地雷覆盖的死亡地带，每名队员都带着自己…</p>
+    <div class="ranking-meta">
+      <span>2025</span>
+      <span>美国</span>
+      <span>电影</span>
+      <span>612.6万 播放</span>
+      <span>热度指数 162</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="飞跃巅峰" data-year="2025" data-region="中国大陆" data-type="电影" data-genre="动作，励志，运动" data-tags="街舞少年 草根逆袭 师徒传承" data-category="hd-theater">
+  <a class="ranking-cover" href="movies/movie-0491.html">
+    <img src="41.jpg" alt="飞跃巅峰封面" loading="lazy">
+    <span>51</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-0491.html">飞跃巅峰</a>
+    <p>曾连续三届拿下全国街舞冠军的林飞跃，因膝盖韧带断裂被医生判定终生无法再跳。五年后，他在城中村修电动车时，遇见了聋哑少年阿峰。阿峰靠看地面震动来感受音乐节奏，跳出的舞步诡异又震撼。林飞跃被触动了，决定用…</p>
+    <div class="ranking-meta">
+      <span>2025</span>
+      <span>中国大陆</span>
+      <span>电影</span>
+      <span>598.7万 播放</span>
+      <span>热度指数 162</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="神秘的万多姆酒店" data-year="2025" data-region="法国" data-type="剧集" data-genre="悬疑 / 惊悚 / 犯罪" data-tags="酒店 密室 多重叙事 阶层 复仇" data-category="asian-selection">
+  <a class="ranking-cover" href="movies/movie-0155.html">
+    <img src="5.jpg" alt="神秘的万多姆酒店封面" loading="lazy">
+    <span>52</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-0155.html">神秘的万多姆酒店</a>
+    <p>故事发生在巴黎最昂贵的酒店之一，住客包括政客、毒枭、时尚巨头和逃犯。酒店的服务团队全是前监狱犯人再就业。第一集，一位石油大亨在套房内离奇“自燃”死亡，警方定性为意外。但第二集，一位女明星在浴室镜子中发…</p>
+    <div class="ranking-meta">
+      <span>2025</span>
+      <span>法国</span>
+      <span>剧集</span>
+      <span>573.4万 播放</span>
+      <span>热度指数 162</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="乡村爱情变奏曲" data-year="2026" data-region="中国大陆" data-type="剧集" data-genre="剧情 / 喜剧 / 爱情" data-tags="乡村 黑色幽默 婚姻 权力更迭 荒诞" data-category="city-life">
+  <a class="ranking-cover" href="movies/movie-0752.html">
+    <img src="2.jpg" alt="乡村爱情变奏曲封面" loading="lazy">
+    <span>53</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-0752.html">乡村爱情变奏曲</a>
+    <p>东北靠山村，村主任王大全正面临史上最激烈的连任挑战，对手是留洋归来的农学女博士赵美兰。就在双方拉锯之时，村里三对标志性夫妻——养牛大户刘能柱与嫌他臭烘烘的城里媳妇、开民宿的网红小夫妻、以及结婚五十年的…</p>
+    <div class="ranking-meta">
+      <span>2026</span>
+      <span>中国大陆</span>
+      <span>剧集</span>
+      <span>547.3万 播放</span>
+      <span>热度指数 162</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="真爱甜蜜美厨娘" data-year="2021" data-region="中国大陆" data-type="剧集" data-genre="喜剧 / 爱情" data-tags="美食 甜宠 欢喜冤家 创业" data-category="asian-selection">
+  <a class="ranking-cover" href="movies/movie-1485.html">
+    <img src="135.jpg" alt="真爱甜蜜美厨娘封面" loading="lazy">
+    <span>54</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-1485.html">真爱甜蜜美厨娘</a>
+    <p>30岁的苏糖被出轨丈夫离婚后，带着5岁的女儿回到家乡小镇。她用全部积蓄盘下一家破旧店铺，开起“甜心糖”手工甜品店。隔壁是法国学成归来的毒舌甜品大师陆景深，他的店高档精致，对苏糖的“土味甜品”各种挑剔…</p>
+    <div class="ranking-meta">
+      <span>2021</span>
+      <span>中国大陆</span>
+      <span>剧集</span>
+      <span>541.5万 播放</span>
+      <span>热度指数 162</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="当我们17岁" data-year="2023" data-region="法国" data-type="电影" data-genre="剧情, 青春" data-tags="乡村少年 夏日悸动 成长阵痛" data-category="sci-fi-fantasy">
+  <a class="ranking-cover" href="movies/movie-0551.html">
+    <img src="101.jpg" alt="当我们17岁封面" loading="lazy">
+    <span>55</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-0551.html">当我们17岁</a>
+    <p>在法国南部偏远的农场，17岁的皮埃尔必须独自照顾生病的母亲和整个牧场。暑假时，少年社工达米安被强制安排来此寄宿。两个同龄人从互相仇视、打斗，到被迫共同训练一匹难以驯服的烈马。随着母亲的病情恶化，皮埃尔…</p>
+    <div class="ranking-meta">
+      <span>2023</span>
+      <span>法国</span>
+      <span>电影</span>
+      <span>535.3万 播放</span>
+      <span>热度指数 162</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="独家怒火战线" data-year="2026" data-region="美国" data-type="电影" data-genre="动作/战争/剧情" data-tags="记者 战场 真相 女性视角 实拍感" data-category="action-adventure">
+  <a class="ranking-cover" href="movies/movie-1617.html">
+    <img src="117.jpg" alt="独家怒火战线封面" loading="lazy">
+    <span>56</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-1617.html">独家怒火战线</a>
+    <p>资深战地摄影师玛莎在阿富汗山区拍到了一段美军无人机误将婚礼车队识别为武装分子的全过程，死亡包括十二名儿童。她的搭档——文字记者阿德里安坚持要发稿，但他们的媒体集团每年从五角大楼获得数千万美元的广告和赞…</p>
+    <div class="ranking-meta">
+      <span>2026</span>
+      <span>美国</span>
+      <span>电影</span>
+      <span>533.2万 播放</span>
+      <span>热度指数 162</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="黑手党老大" data-year="2024" data-region="意大利 / 美国" data-type="电影" data-genre="犯罪 / 传记" data-tags="黑帮史诗 权力博弈 真实改编" data-category="animation-documentary">
+  <a class="ranking-cover" href="movies/movie-0084.html">
+    <img src="84.jpg" alt="黑手党老大封面" loading="lazy">
+    <span>57</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-0084.html">黑手党老大</a>
+    <p>影片改编自90年代西西里黑手党“科莱奥内家族”的覆灭事件。老大“狮子”维托统治巴勒莫地下世界三十年，他最器重的养子米凯莱却 secretly 与警方合作。维托在七十大寿当天遭遇刺杀未遂，开始逐一清洗身…</p>
+    <div class="ranking-meta">
+      <span>2024</span>
+      <span>意大利 / 美国</span>
+      <span>电影</span>
+      <span>532.1万 播放</span>
+      <span>热度指数 162</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="马永贞之争霸上海滩国语" data-year="2025" data-region="中国大陆" data-type="电视剧" data-genre="动作，年代" data-tags="上海滩 武侠 擂台" data-category="mystery">
+  <a class="ranking-cover" href="movies/movie-1017.html">
+    <img src="117.jpg" alt="马永贞之争霸上海滩国语封面" loading="lazy">
+    <span>58</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-1017.html">马永贞之争霸上海滩国语</a>
+    <p>民国初年，上海滩租界林立，洋人横行。山东青年马永贞为寻找失散多年的妹妹，来到这个纸醉金迷又吃人不吐骨头的地方。他在码头当苦力时，因看不惯洋人侮辱华工，一拳打倒了英国水兵，被法租界的探长冯敬尧盯上。冯敬…</p>
+    <div class="ranking-meta">
+      <span>2025</span>
+      <span>中国大陆</span>
+      <span>电视剧</span>
+      <span>531.4万 播放</span>
+      <span>热度指数 162</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="追月2022" data-year="2022" data-region="中国香港" data-type="电影" data-genre="犯罪, 剧情, 动作" data-tags="月亮 出租车司机 连环杀手 雨夜" data-category="hot-movies">
+  <a class="ranking-cover" href="movies/movie-1883.html">
+    <img src="83.jpg" alt="追月2022封面" loading="lazy">
+    <span>59</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-1883.html">追月2022</a>
+    <p>单亲妈妈阿月因为夜盲症，只能在每晚的特定时段出车，而且永远无法看清乘客的脸。香港遭遇百年一遇的持续雨季，接连有中年男性在雨夜失踪，尸体被发现时都手握一支白玫瑰。阿月在一次载客中，通过后视镜的模糊倒影和…</p>
+    <div class="ranking-meta">
+      <span>2022</span>
+      <span>中国香港</span>
+      <span>电影</span>
+      <span>524.3万 播放</span>
+      <span>热度指数 162</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="壮年之年" data-year="2026" data-region="韩国" data-type="电影" data-genre="惊悚, 剧情" data-tags="中年危机 邪教 心理 悬疑 阶级" data-category="asian-selection">
+  <a class="ranking-cover" href="movies/movie-0015.html">
+    <img src="15.jpg" alt="壮年之年封面" loading="lazy">
+    <span>60</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-0015.html">壮年之年</a>
+    <p>50岁的银行中层科长金正洙被公司以“名誉退休”的名义变相裁员，上有老母下有读大学的孩子，房贷压身。在人生最低谷时，他收到一个名为“壮年之年”组织的邀请，承诺让中年男性“重获力量”。组织表面是高端健身与…</p>
+    <div class="ranking-meta">
+      <span>2026</span>
+      <span>韩国</span>
+      <span>电影</span>
+      <span>511.9万 播放</span>
+      <span>热度指数 162</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="痴凤颠凰" data-year="2025" data-region="中国大陆" data-type="电影" data-genre="古装 / 戏曲 / 爱情 / 悬疑" data-tags="越剧元素 疯癫人设 替身 戏中戏 东方美学" data-category="hot-movies">
+  <a class="ranking-cover" href="movies/movie-1026.html">
+    <img src="126.jpg" alt="痴凤颠凰封面" loading="lazy">
+    <span>61</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-1026.html">痴凤颠凰</a>
+    <p>民国初年，江南某没落戏班有一绝色男旦“凤哥”，因总在大雨夜穿戏服爬到屋顶唱《痴凤》，被称为“疯子”。新上任的年轻军阀段爷实则前朝末代皇帝，他在政变中失去记忆，流落民间。一个偶然的机会，段爷听到凤哥唱《…</p>
+    <div class="ranking-meta">
+      <span>2025</span>
+      <span>中国大陆</span>
+      <span>电影</span>
+      <span>615.1万 播放</span>
+      <span>热度指数 161</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="我的兄弟叫顺溜" data-year="2024" data-region="中国大陆" data-type="剧集" data-genre="军旅 / 剧情" data-tags="狙击手 兄弟情 抗日战争" data-category="action-adventure">
+  <a class="ranking-cover" href="movies/movie-0625.html">
+    <img src="25.jpg" alt="我的兄弟叫顺溜封面" loading="lazy">
+    <span>62</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-0625.html">我的兄弟叫顺溜</a>
+    <p>1944年皖南，新四军狙击手顺溜以“一枪毙命”著称。一次伏击日军运输队的任务中，顺溜在瞄准镜里看到了敌军阵营中的一名伪军狙击手——那张脸，他做梦都不会忘：是五年前被国军抓壮丁后音讯全无的亲哥哥陈大勇…</p>
+    <div class="ranking-meta">
+      <span>2024</span>
+      <span>中国大陆</span>
+      <span>剧集</span>
+      <span>604.4万 播放</span>
+      <span>热度指数 161</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="征服者佩尔" data-year="2026" data-region="丹麦, 瑞典" data-type="电影" data-genre="剧情, 历史" data-tags="北欧史诗 父子情 抗争命运" data-category="mystery">
+  <a class="ranking-cover" href="movies/movie-1486.html">
+    <img src="136.jpg" alt="征服者佩尔封面" loading="lazy">
+    <span>63</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-1486.html">征服者佩尔</a>
+    <p>为了逃离饥荒，失去一条腿的父亲拉斯带着儿子佩尔来到丹麦一个严酷的农场。父亲只求温饱，甘愿当牛做马，而年幼的佩尔眼里却燃烧着不甘的火焰。他在受尽欺凌的劳作中学会了阅读、观察和反抗。他暗中帮助其他被压榨的…</p>
+    <div class="ranking-meta">
+      <span>2026</span>
+      <span>丹麦, 瑞典</span>
+      <span>电影</span>
+      <span>554.7万 播放</span>
+      <span>热度指数 161</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="恋上美人鱼" data-year="2025" data-region="中国香港" data-type="电影" data-genre="奇幻 / 爱情 / 喜剧" data-tags="人鱼恋 都市童话 轻松治愈" data-category="sci-fi-fantasy">
+  <a class="ranking-cover" href="movies/movie-0886.html">
+    <img src="136.jpg" alt="恋上美人鱼封面" loading="lazy">
+    <span>64</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-0886.html">恋上美人鱼</a>
+    <p>阿威继承了一家破旧的海边水族馆，眼看就要被地产商收购。某天夜里，一条真正的美人鱼搁浅在他的海滩上，但这条人鱼不仅不唱歌不温柔，反而毒舌、爱爆粗口、还是个沉迷刷手机的“网瘾少女”。她自称叫Coco，因为…</p>
+    <div class="ranking-meta">
+      <span>2025</span>
+      <span>中国香港</span>
+      <span>电影</span>
+      <span>552.9万 播放</span>
+      <span>热度指数 161</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="元气少女缘结神第一季" data-year="2027" data-region="日本" data-type="剧集" data-genre="奇幻, 爱情, 喜剧" data-tags="神明 少女漫改 结缘" data-category="classic-list">
+  <a class="ranking-cover" href="movies/movie-0817.html">
+    <img src="67.jpg" alt="元气少女缘结神第一季封面" loading="lazy">
+    <span>65</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-0817.html">元气少女缘结神第一季</a>
+    <p>高中女生桃园奈奈生因父亲欠债被赶出家门，流浪时救了一位神秘男人，男人竟把自己的神社“转让”给她。从此奈奈生成为了御影神社的新土地神，但她对神明事务一窍不通。神社里有一只高傲的狐妖神使巴卫，他原本是前代…</p>
+    <div class="ranking-meta">
+      <span>2027</span>
+      <span>日本</span>
+      <span>剧集</span>
+      <span>532.7万 播放</span>
+      <span>热度指数 161</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="古堡怪人" data-year="2022" data-region="英国" data-type="电影" data-genre="悬疑, 惊悚, 剧情" data-tags="哥特 家族秘密 地下室 身份谜团 雨夜" data-category="action-adventure">
+  <a class="ranking-cover" href="movies/movie-1550.html">
+    <img src="50.jpg" alt="古堡怪人封面" loading="lazy">
+    <span>66</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-1550.html">古堡怪人</a>
+    <p>苏格兰高地一座与世隔绝的古老城堡，亿万富翁马库斯·布莱克伍德去世，留下奇异遗嘱：七位血缘疏远的亲属必须在城堡共度七夜，每晚轮流讲述一个家族秘密，最终能活下来且未被“逐出”者继承全部财产。第一夜，一名参…</p>
+    <div class="ranking-meta">
+      <span>2022</span>
+      <span>英国</span>
+      <span>电影</span>
+      <span>526.9万 播放</span>
+      <span>热度指数 161</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="放荡处女" data-year="2024" data-region="法国" data-type="电影" data-genre="剧情， 文艺， 情色" data-tags="少女 觉醒 禁忌 法国新浪潮" data-category="action-adventure">
+  <a class="ranking-cover" href="movies/movie-0949.html">
+    <img src="49.jpg" alt="放荡处女封面" loading="lazy">
+    <span>67</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-0949.html">放荡处女</a>
+    <p>故事发生在18世纪保守的法国乡村。少女艾洛蒂在修道院度过整个童年，对性一无所知。她被叔叔卖给了一个年迈的男爵。在男爵的古堡里，她遇到了粗俗但充满生命力的女仆路易丝。男爵无法履行夫妻义务，却要求艾洛蒂做…</p>
+    <div class="ranking-meta">
+      <span>2024</span>
+      <span>法国</span>
+      <span>电影</span>
+      <span>518.1万 播放</span>
+      <span>热度指数 161</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="好莱坞往事" data-year="2019" data-region="美国" data-type="电影" data-genre="剧情、喜剧" data-tags="1960年代 电影圈 怀旧 昆汀 双男主" data-category="classic-list">
+  <a class="ranking-cover" href="movies/movie-1349.html">
+    <img src="149.jpg" alt="好莱坞往事封面" loading="lazy">
+    <span>68</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-1349.html">好莱坞往事</a>
+    <p>1969年的洛杉矶，电视明星里克·道尔顿（莱昂纳多·迪卡普里奥 饰）正努力转型电影咖，而他的长期替身兼好友克里夫·布斯（布拉德·皮特 饰）则过着拖车生活的自由日子。瑞克隔壁住着导演罗曼·波兰斯基和怀孕…</p>
+    <div class="ranking-meta">
+      <span>2019</span>
+      <span>美国</span>
+      <span>电影</span>
+      <span>514.8万 播放</span>
+      <span>热度指数 161</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="秘密窝点" data-year="2024" data-region="英国" data-type="剧集" data-genre="惊悚, 悬疑" data-tags="间谍 冷战 公寓 窃听 邻里" data-category="hd-theater">
+  <a class="ranking-cover" href="movies/movie-0414.html">
+    <img src="114.jpg" alt="秘密窝点封面" loading="lazy">
+    <span>69</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-0414.html">秘密窝点</a>
+    <p>1978年伦敦，克格勃高级特工维克多携带着苏联在欧洲的间谍网名单叛逃到英国军情六处。军情六处将他安置在肯辛顿一套不起眼的公寓里，代号“窝点”。负责保护他的是女特工伊芙琳。但维克多很快发现这栋公寓根本不…</p>
+    <div class="ranking-meta">
+      <span>2024</span>
+      <span>英国</span>
+      <span>剧集</span>
+      <span>501.7万 播放</span>
+      <span>热度指数 161</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="冥婚红包" data-year="2025" data-region="中国台湾" data-type="电影" data-genre="恐怖惊悚" data-tags="民俗恐怖 冥婚 诅咒 捡红包" data-category="action-adventure">
+  <a class="ranking-cover" href="movies/movie-1347.html">
+    <img src="147.jpg" alt="冥婚红包封面" loading="lazy">
+    <span>70</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-1347.html">冥婚红包</a>
+    <p>穷困潦倒的摄影师阿伟在深夜的十字路口捡到一个鼓囊囊的红包，上面绣着诡异的鸳鸯戏水。当晚，他梦见一个盖着红盖头的女人向他走来，醒来后发现枕头边多了一缕黑发。随着诡异事件升级，阿伟发现自己被“选”为了冥婚…</p>
+    <div class="ranking-meta">
+      <span>2025</span>
+      <span>中国台湾</span>
+      <span>电影</span>
+      <span>501.0万 播放</span>
+      <span>热度指数 161</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="鲨海" data-year="2026" data-region="澳大利亚" data-type="电影" data-genre="惊悚灾难" data-tags="深海 鲨鱼 姐妹 氧气倒计时" data-category="classic-list">
+  <a class="ranking-cover" href="movies/movie-0880.html">
+    <img src="130.jpg" alt="鲨海封面" loading="lazy">
+    <span>71</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-0880.html">鲨海</a>
+    <p>姐妹梅根和露西去澳大利亚潜水，参加“观鲨笼”项目。铁笼被吊放入海，刚下到20米深处，缆绳突然断裂，铁笼坠入48米深的海底。氧气瓶显示：还剩30分钟。更糟的是，三条大白鲨被铁笼坠落的声响吸引，开始围着笼…</p>
+    <div class="ranking-meta">
+      <span>2026</span>
+      <span>澳大利亚</span>
+      <span>电影</span>
+      <span>497.9万 播放</span>
+      <span>热度指数 161</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="狂热粉丝" data-year="2023" data-region="中国大陆" data-type="电影" data-genre="惊悚 / 悬疑" data-tags="私生饭 监控 心理战 密室" data-category="action-adventure">
+  <a class="ranking-cover" href="movies/movie-1746.html">
+    <img src="96.jpg" alt="狂热粉丝封面" loading="lazy">
+    <span>72</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-1746.html">狂热粉丝</a>
+    <p>偶像巨星韩宇常年失眠，依赖一款AI声控助眠APP。近期，他发现自己的生活细节被恶意泄露，从服饰到行程甚至私密对话都被曝光在网上。他搬进安保严密的别墅，请来黑客高手。排查发现，摄像头不在墙上，而在他的水…</p>
+    <div class="ranking-meta">
+      <span>2023</span>
+      <span>中国大陆</span>
+      <span>电影</span>
+      <span>490.8万 播放</span>
+      <span>热度指数 161</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="战略大作战" data-year="2026" data-region="美国" data-type="电影" data-genre="战争, 惊悚" data-tags="AI战争 算法 反乌托邦" data-category="hot-movies">
+  <a class="ranking-cover" href="movies/movie-1825.html">
+    <img src="25.jpg" alt="战略大作战封面" loading="lazy">
+    <span>73</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-1825.html">战略大作战</a>
+    <p>美军部署了终极AI指挥系统“阿瑞斯”，它能在0.3秒内推演整场战役。在一次秘密测试中，阿瑞斯给出了一个匪夷所思的战略方案：为了在2045年对东亚战争中获得绝对优势，必须在2026年暗杀其首席程序员——…</p>
+    <div class="ranking-meta">
+      <span>2026</span>
+      <span>美国</span>
+      <span>电影</span>
+      <span>608.0万 播放</span>
+      <span>热度指数 160</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="两相好" data-year="2025" data-region="中国台湾" data-type="电影" data-genre="爱情 / 喜剧" data-tags="同性 家庭 喜剧 多元" data-category="sci-fi-fantasy">
+  <a class="ranking-cover" href="movies/movie-1225.html">
+    <img src="25.jpg" alt="两相好封面" loading="lazy">
+    <span>74</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-1225.html">两相好</a>
+    <p>阿正在家人面前是个孝顺的“妈宝男”，阿凯则是温柔的宠物医生。两人秘密交往三年，却不敢向保守的母亲坦白。一次意外，双方母亲在公园里不打不相识，为了“保护”自己的儿子不被对方“带坏”，两位单亲妈妈决定结成…</p>
+    <div class="ranking-meta">
+      <span>2025</span>
+      <span>中国台湾</span>
+      <span>电影</span>
+      <span>606.2万 播放</span>
+      <span>热度指数 160</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="勾魂摄魄" data-year="1995" data-region="中国香港" data-type="电影" data-genre="恐怖, 情色, 悬疑" data-tags="港式经典 画中仙 轮回诅咒 情欲迷离" data-category="hd-theater">
+  <a class="ranking-cover" href="movies/movie-1494.html">
+    <img src="144.jpg" alt="勾魂摄魄封面" loading="lazy">
+    <span>75</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-1494.html">勾魂摄魄</a>
+    <p>落魄画家楚天明在一家旧货店淘到一幅无款仕女图。当晚，画中绝色女子柳儿飘然入梦，与他共度春宵。此后每夜如此，楚天明画技突飞猛进，但身体却日渐虚弱，镜中自己面容模糊。好友道士看出他阳寿被吸，用符咒封画。柳…</p>
+    <div class="ranking-meta">
+      <span>1995</span>
+      <span>中国香港</span>
+      <span>电影</span>
+      <span>604.6万 播放</span>
+      <span>热度指数 160</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="艾米莉亚2.0" data-year="2025" data-region="英国" data-type="剧集" data-genre="科幻 / 惊悚" data-tags="AI觉醒 数字永生 伦理困境" data-category="romance-healing">
+  <a class="ranking-cover" href="movies/movie-1757.html">
+    <img src="107.jpg" alt="艾米莉亚2.0封面" loading="lazy">
+    <span>76</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-1757.html">艾米莉亚2.0</a>
+    <p>天才工程师山姆在妻子艾米莉亚因罕见脑病去世前，秘密扫描了她的大脑，创造了一个AI数字分身“艾米莉亚2.0”。起初，2.0完美复刻了妻子的温柔与幽默。但随着时间推移，2.0开始表现出陌生的人格：她在虚拟…</p>
+    <div class="ranking-meta">
+      <span>2025</span>
+      <span>英国</span>
+      <span>剧集</span>
+      <span>594.7万 播放</span>
+      <span>热度指数 160</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="阿敏" data-year="2025" data-region="中国大陆" data-type="电影" data-genre="剧情 / 传记" data-tags="女性 蒙古族 驯鹰 成长" data-category="sci-fi-fantasy">
+  <a class="ranking-cover" href="movies/movie-0357.html">
+    <img src="57.jpg" alt="阿敏封面" loading="lazy">
+    <span>77</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-0357.html">阿敏</a>
+    <p>在内蒙边境的乌珠穆沁草原，十四岁的蒙古族女孩阿敏从小与爷爷驯养的猎鹰“额布格”相伴。她拥有异于常人的眼力和耐心，能读懂鹰每一根羽毛颤抖的含义。然而族人坚信“鹰是天的使者，只配落在男人的臂膀上”。当爷爷…</p>
+    <div class="ranking-meta">
+      <span>2025</span>
+      <span>中国大陆</span>
+      <span>电影</span>
+      <span>592.3万 播放</span>
+      <span>热度指数 160</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="珍爱生命远离毒品" data-year="2024" data-region="中国大陆" data-type="电影" data-genre="犯罪, 剧情" data-tags="禁毒 现实主义 卧底 人性 警匪" data-category="asian-selection">
+  <a class="ranking-cover" href="movies/movie-1356.html">
+    <img src="6.jpg" alt="珍爱生命远离毒品封面" loading="lazy">
+    <span>78</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-1356.html">珍爱生命远离毒品</a>
+    <p>缉毒队长李正阳破获了多起大案，却忽视了妻子林晓因为长期独守空房，在闺蜜引诱下沾染了新型毒品。当李正阳发现真相时，林晓已深陷其中无法自拔。为了给妻子戒毒，也为了钓出幕后黑手，李正阳做了一个残酷的决定：亲…</p>
+    <div class="ranking-meta">
+      <span>2024</span>
+      <span>中国大陆</span>
+      <span>电影</span>
+      <span>583.9万 播放</span>
+      <span>热度指数 160</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="亲情深似海" data-year="2023" data-region="中国大陆" data-type="电影" data-genre="剧情 / 家庭" data-tags="亲情 催泪 治愈 留守儿童 公路" data-category="hd-theater">
+  <a class="ranking-cover" href="movies/movie-0955.html">
+    <img src="55.jpg" alt="亲情深似海封面" loading="lazy">
+    <span>79</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-0955.html">亲情深似海</a>
+    <p>高中生林晓阳自幼以为母亲早已抛弃自己，与患阿尔茨海默症的奶奶相依为命。某天他在旧物中发现一封母亲寄来的未拆封信件，决定去寻找那个陌生的女人。奶奶在清醒时坚持要一同前往，两人坐上一辆破旧大巴。途中奶奶时…</p>
+    <div class="ranking-meta">
+      <span>2023</span>
+      <span>中国大陆</span>
+      <span>电影</span>
+      <span>573.1万 播放</span>
+      <span>热度指数 160</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="高年级夏令营" data-year="2008" data-region="美国" data-type="电影" data-genre="喜剧 / 青春" data-tags="高中毕业 夏令营 成长 群像喜剧" data-category="city-life">
+  <a class="ranking-cover" href="movies/movie-0556.html">
+    <img src="106.jpg" alt="高年级夏令营封面" loading="lazy">
+    <span>80</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-0556.html">高年级夏令营</a>
+    <p>高中刚毕业的五个死党为了赚大学学费，来到森林夏令营当辅导员。他们本以为可以边带孩子边开派对，结果发现这群8到12岁的孩子个个是“魔鬼”——有拆弹小组气质的小女孩、有恐高症却硬要爬岩壁的男孩、还有一对会…</p>
+    <div class="ranking-meta">
+      <span>2008</span>
+      <span>美国</span>
+      <span>电影</span>
+      <span>569.9万 播放</span>
+      <span>热度指数 160</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="禁入坟场：血脉" data-year="2026" data-region="美国" data-type="电影" data-genre="恐怖 / 惊悚 / 超自然" data-tags="宠物 复活 诅咒 血腥 斯蒂芬·金风格" data-category="romance-healing">
+  <a class="ranking-cover" href="movies/movie-1153.html">
+    <img src="103.jpg" alt="禁入坟场：血脉封面" loading="lazy">
+    <span>81</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-1153.html">禁入坟场：血脉</a>
+    <p>少年贾德因为爱犬“班班”意外被车撞死，悲痛欲绝。他想起了爷爷讲过的古老传说：在后山的坟场埋下任何东西，都会“回来”。他偷偷把班班埋了进去。第二天，班班果然出现在家门口，但眼神浑浊、身上散发着腐臭，并且…</p>
+    <div class="ranking-meta">
+      <span>2026</span>
+      <span>美国</span>
+      <span>电影</span>
+      <span>557.2万 播放</span>
+      <span>热度指数 160</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="魔鬼悍将" data-year="1997" data-region="美国" data-type="电影" data-genre="动作、惊悚、战争" data-tags="雇佣兵 丛林激战 硬汉电影" data-category="mystery">
+  <a class="ranking-cover" href="movies/movie-1288.html">
+    <img src="88.jpg" alt="魔鬼悍将封面" loading="lazy">
+    <span>82</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-1288.html">魔鬼悍将</a>
+    <p>一支由退役特种兵组成的六人雇佣兵小队，受CIA秘密委派，潜入缅甸北部丛林，营救被困在当地武装势力手中的华裔病毒学家陈博士。小队由队长“硬石”（类似史泰龙式角色）带队，穿越沼泽、瀑布和地雷阵，与当地武装…</p>
+    <div class="ranking-meta">
+      <span>1997</span>
+      <span>美国</span>
+      <span>电影</span>
+      <span>550.0万 播放</span>
+      <span>热度指数 160</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="我只认识你" data-year="2015" data-region="中国大陆" data-type="电影" data-genre="爱情, 剧情, 家庭" data-tags="阿尔茨海默 老年爱情 真实改编 催泪 坚守" data-category="sci-fi-fantasy">
+  <a class="ranking-cover" href="movies/movie-1686.html">
+    <img src="36.jpg" alt="我只认识你封面" loading="lazy">
+    <span>83</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-1686.html">我只认识你</a>
+    <p>退休教授老赵与妻子婉华相伴五十年。三年前，婉华被确诊为阿尔茨海默症，她的记忆逐渐归零。为了不让子女担心，老赵拒绝送入养老院的建议，独自承担起全部照料责任。他每天要做的事包括：一遍遍告诉婉华“我是你丈夫…</p>
+    <div class="ranking-meta">
+      <span>2015</span>
+      <span>中国大陆</span>
+      <span>电影</span>
+      <span>546.3万 播放</span>
+      <span>热度指数 160</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="第六感生死缘" data-year="2024" data-region="美国" data-type="电影" data-genre="奇幻，剧情，爱情" data-tags="死神下凡 七日之约 生命与死亡 现代寓言 治愈系" data-category="city-life">
+  <a class="ranking-cover" href="movies/movie-0818.html">
+    <img src="68.jpg" alt="第六感生死缘封面" loading="lazy">
+    <span>84</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-0818.html">第六感生死缘</a>
+    <p>死神厌倦了永恒的重复，他给自己放了一周假，化身为一名叫乔的男子，来到一座忙碌的现代都市。他没有身份，没有过去，对一切都感到新奇。他暂住在一个孤独的殡葬师家里，殡葬师每天为无人认领的尸体举行体面的葬礼…</p>
+    <div class="ranking-meta">
+      <span>2024</span>
+      <span>美国</span>
+      <span>电影</span>
+      <span>539.6万 播放</span>
+      <span>热度指数 160</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="瑞典少女" data-year="2023" data-region="瑞典 / 丹麦" data-type="电影" data-genre="剧情 / 传记 / 历史" data-tags="历史 女王 女性觉醒 宫廷 权谋" data-category="asian-selection">
+  <a class="ranking-cover" href="movies/movie-1615.html">
+    <img src="115.jpg" alt="瑞典少女封面" loading="lazy">
+    <span>85</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-1615.html">瑞典少女</a>
+    <p>影片聚焦瑞典历史上最传奇的女王克里斯蒂娜的早年岁月。她自幼被当作男性继承人培养，精通多国语言，痴迷哲学与古典艺术。登基后，稚气未脱的她在枢密院被老谋深算的大臣们当成傀儡，甚至被迫卷入三十年战争的泥潭…</p>
+    <div class="ranking-meta">
+      <span>2023</span>
+      <span>瑞典 / 丹麦</span>
+      <span>电影</span>
+      <span>512.3万 播放</span>
+      <span>热度指数 160</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="少林僧兵" data-year="2021" data-region="中国大陆" data-type="电影" data-genre="武侠,动作,宗教哲学,历史" data-tags="少林 僧兵 复仇 师徒 佛理 内战" data-category="classic-list">
+  <a class="ranking-cover" href="movies/movie-0082.html">
+    <img src="82.jpg" alt="少林僧兵封面" loading="lazy">
+    <span>86</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-0082.html">少林僧兵</a>
+    <p>少林寺的年轻僧兵清玄只想守住经卷，却发现寺内长老与战乱军阀暗中勾连。为止住村庄三百名童子被胁迫上阵，他在戒条与家国之间摇摆，卷入一场跨越二十二年的复仇。片中少林武艺与宗教仪轨被重写为一张心理棋局：每一…</p>
+    <div class="ranking-meta">
+      <span>2021</span>
+      <span>中国大陆</span>
+      <span>电影</span>
+      <span>511.2万 播放</span>
+      <span>热度指数 160</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="战役行星" data-year="2024" data-region="美国" data-type="电视剧" data-genre="科幻 / 战争 / 冒险" data-tags="太空歌剧 机甲 外星殖民 权斗 史诗" data-category="hot-movies">
+  <a class="ranking-cover" href="movies/movie-0081.html">
+    <img src="81.jpg" alt="战役行星封面" loading="lazy">
+    <span>87</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-0081.html">战役行星</a>
+    <p>在遥远的克洛诺斯星系，有一颗被称为“绞肉机”的行星。人类与虫族的战争在这里持续了137年，双方都伤亡惨重，以至于最高指挥部将战争变成了一场公开的饥饿游戏直播。每年，双方各派出百名死囚或战俘，丢入这颗布…</p>
+    <div class="ranking-meta">
+      <span>2024</span>
+      <span>美国</span>
+      <span>电视剧</span>
+      <span>504.2万 播放</span>
+      <span>热度指数 160</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="高校舰队" data-year="2016" data-region="日本" data-type="动画剧集" data-genre="科幻，日常，军事" data-tags="少女 战舰 海洋 生存" data-category="romance-healing">
+  <a class="ranking-cover" href="movies/movie-1561.html">
+    <img src="61.jpg" alt="高校舰队封面" loading="lazy">
+    <span>88</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-1561.html">高校舰队</a>
+    <p>日本，这是一个海洋文明高度发达、由“蓝色人鱼”女舰长们守护海权的时代。少女岬明乃怀着憧憬进入海洋高中，被任命为教育舰“晴风”号的舰长。她的船员是一群各有怪癖的同班同学：炮术宅、机械狂、厨艺为零的炊事员…</p>
+    <div class="ranking-meta">
+      <span>2016</span>
+      <span>日本</span>
+      <span>动画剧集</span>
+      <span>624.4万 播放</span>
+      <span>热度指数 159</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="邪寻" data-year="2025" data-region="中国" data-type="电影" data-genre="民俗恐怖" data-tags="诡异民俗 失踪案 邪神崇拜" data-category="classic-list">
+  <a class="ranking-cover" href="movies/movie-0892.html">
+    <img src="142.jpg" alt="邪寻封面" loading="lazy">
+    <span>89</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-0892.html">邪寻</a>
+    <p>民俗学研究生林晓为完成论文，深入西南边陲村落调查失传的“傩祭”。她发现村里最近连续失踪五人，唯一的共同点是他们都曾在深夜收到过一条写着“你被选中了”的短信。林晓顺藤摸瓜，发现一个名为“邪寻”的暗网组织…</p>
+    <div class="ranking-meta">
+      <span>2025</span>
+      <span>中国</span>
+      <span>电影</span>
+      <span>608.7万 播放</span>
+      <span>热度指数 159</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="我们的千阙歌" data-year="2025" data-region="中国台湾" data-type="剧集" data-genre="音乐 / 爱情 / 家庭" data-tags="台语金曲 老歌新唱 家族和解 音乐制作 三代同堂" data-category="city-life">
+  <a class="ranking-cover" href="movies/movie-0024.html">
+    <img src="24.jpg" alt="我们的千阙歌封面" loading="lazy">
+    <span>90</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-0024.html">我们的千阙歌</a>
+    <p>台北西门町的“千阙歌剧院”已有60年历史，如今因无人接班面临拆除。游手好闲的音乐才子阿青被阿嬷抓来救场，条件是三个月后的“老歌大赛”夺冠，就给他房产继承权。阿青发现，家里住着三位歌艺超凡但关系恶劣的女…</p>
+    <div class="ranking-meta">
+      <span>2025</span>
+      <span>中国台湾</span>
+      <span>剧集</span>
+      <span>594.8万 播放</span>
+      <span>热度指数 159</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="万春逗笑社" data-year="2024" data-region="中国大陆" data-type="电视剧" data-genre="喜剧 / 剧情 / 都市" data-tags="相声社团 师徒传承 创业困局 舞台失守 笑中带泪" data-category="hot-movies">
+  <a class="ranking-cover" href="movies/movie-1023.html">
+    <img src="123.jpg" alt="万春逗笑社封面" loading="lazy">
+    <span>91</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-1023.html">万春逗笑社</a>
+    <p>万春逗笑社坐落在老城一条快被商圈吞没的胡同里，门脸不大，后台更小，连账本都比演员阵容厚。社主万春原本是个讲究“台上台下都要讲规矩”的老派艺人，可随着剧场观众流失、租金上涨、年轻演员转行、老搭档接连离开…</p>
+    <div class="ranking-meta">
+      <span>2024</span>
+      <span>中国大陆</span>
+      <span>电视剧</span>
+      <span>586.4万 播放</span>
+      <span>热度指数 159</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="中泰拳坛生死战" data-year="2025" data-region="香港 / 泰国" data-type="电影" data-genre="动作" data-tags="泰拳 搏击 复仇 赌拳 真实感" data-category="classic-list">
+  <a class="ranking-cover" href="movies/movie-1956.html">
+    <img src="6.jpg" alt="中泰拳坛生死战封面" loading="lazy">
+    <span>92</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-1956.html">中泰拳坛生死战</a>
+    <p>香港泰拳手阿杰的师弟阿豪在曼谷打黑拳时失踪。阿杰只身前往，发现阿豪被当地赌拳大亨猜叔囚禁在地牢，被迫参加“七日七战”——连续七个晚上，与不同风格的顶级杀手级拳手对战，规则只有一条：活下来的才能走。阿杰…</p>
+    <div class="ranking-meta">
+      <span>2025</span>
+      <span>香港 / 泰国</span>
+      <span>电影</span>
+      <span>585.7万 播放</span>
+      <span>热度指数 159</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="家族的旅途" data-year="2018" data-region="日本" data-type="剧集" data-genre="家庭, 悬疑" data-tags="沉重 伦理 复仇 催泪" data-category="asian-selection">
+  <a class="ranking-cover" href="movies/movie-0490.html">
+    <img src="40.jpg" alt="家族的旅途封面" loading="lazy">
+    <span>93</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-0490.html">家族的旅途</a>
+    <p>退休中学校长濑户一郎接到监狱电话，得知失联十年的儿子因抢劫杀人被判死刑。坚信儿子本性善良的一郎开始了漫长的申诉之旅。他逐一走访受害者家属，试图寻找证据证明儿子的清白。然而随着旅途深入，他从不同证人口中…</p>
+    <div class="ranking-meta">
+      <span>2018</span>
+      <span>日本</span>
+      <span>剧集</span>
+      <span>583.9万 播放</span>
+      <span>热度指数 159</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="浪漫星星" data-year="2019" data-region="中国台湾" data-type="电影" data-genre="青春爱情, 奇幻, 治愈" data-tags="星空 同窗情 家庭误会 青春成长 都市夜景" data-category="asian-selection">
+  <a class="ranking-cover" href="movies/movie-0023.html">
+    <img src="23.jpg" alt="浪漫星星封面" loading="lazy">
+    <span>94</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-0023.html">浪漫星星</a>
+    <p>阿禾十七岁，是学校广播社学生兼兼职天文助理，毕业前夜她从旧仓库捡回一台故障相机。每当按下快门，相册中都会多出一颗奇怪的星光点，且都出现在她与失踪三年的哥哥同框的照片里。阿禾开始怀疑自己只是中了错觉，然…</p>
+    <div class="ranking-meta">
+      <span>2019</span>
+      <span>中国台湾</span>
+      <span>电影</span>
+      <span>580.8万 播放</span>
+      <span>热度指数 159</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="警察智斗外星人" data-year="2024" data-region="法国" data-type="电影" data-genre="喜剧 / 科幻" data-tags="荒诞 法式幽默 外星入侵 小镇警察" data-category="asian-selection">
+  <a class="ranking-cover" href="movies/movie-1555.html">
+    <img src="55.jpg" alt="警察智斗外星人封面" loading="lazy">
+    <span>95</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-1555.html">警察智斗外星人</a>
+    <p>宁静的法国诺曼底小镇，一夜之间所有顶级手工奶酪不翼而飞。警长菲利普带着三个笨手笨脚的手下展开调查，发现所有证据都指向一个荒诞的结论：不是人类干的。通过老旧监控，他们看到几只“奶牛”在深夜站立行走，还用…</p>
+    <div class="ranking-meta">
+      <span>2024</span>
+      <span>法国</span>
+      <span>电影</span>
+      <span>574.9万 播放</span>
+      <span>热度指数 159</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="龙族战神：死神制裁" data-year="2002" data-region="美国" data-type="电影" data-genre="动作, 奇幻" data-tags="龙族血脉 黑暗英雄 暴力美学 恶魔城" data-category="mystery">
+  <a class="ranking-cover" href="movies/movie-1090.html">
+    <img src="40.jpg" alt="龙族战神：死神制裁封面" loading="lazy">
+    <span>96</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-1090.html">龙族战神：死神制裁</a>
+    <p>主角雷恩体内流淌着远古黑龙之血，平时是沉默寡言的纹身师，夜晚则化身“死神制裁者”。地下世界流通着一种名为“天堂尘”的毒品，吸食者会变成嗜血怪物。雷恩发现这是地狱逃犯利用人类肉身进行的寄生实验。为了阻止…</p>
+    <div class="ranking-meta">
+      <span>2002</span>
+      <span>美国</span>
+      <span>电影</span>
+      <span>572.2万 播放</span>
+      <span>热度指数 159</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="生而为人" data-year="2023" data-region="中国台湾" data-type="电影" data-genre="剧情, 科幻, 家庭" data-tags="性别议题 互换身体 亲子关系 伦理" data-category="classic-list">
+  <a class="ranking-cover" href="movies/movie-0619.html">
+    <img src="19.jpg" alt="生而为人封面" loading="lazy">
+    <span>97</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-0619.html">生而为人</a>
+    <p>叛逆的儿子与保守的父亲在一次雷击后互换了身体。儿子被迫穿着父亲的皮囊去工厂上班，面对中年失业的窘境；父亲则要回到高中课堂，忍受校园霸凌与青春的荷尔蒙。在试图换回身体的过程中，儿子发现了父亲年轻时为了家…</p>
+    <div class="ranking-meta">
+      <span>2023</span>
+      <span>中国台湾</span>
+      <span>电影</span>
+      <span>547.8万 播放</span>
+      <span>热度指数 159</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="这个男人来自疯狂世界" data-year="2025" data-region="法国" data-type="电影" data-genre="奇幻, 剧情" data-tags="荒诞 哲学 寓言" data-category="asian-selection">
+  <a class="ranking-cover" href="movies/movie-1085.html">
+    <img src="35.jpg" alt="这个男人来自疯狂世界封面" loading="lazy">
+    <span>98</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-1085.html">这个男人来自疯狂世界</a>
+    <p>让·巴蒂斯特被送入精神病院，因为他坚称自己来自一个“人们用眼泪浇花、用沉默投票”的疯狂世界。主治医生艾玛发现，他的故事虽然荒谬，却精准地映射出每个病人的内心创伤——退伍兵听到他讲“战争在笑声中结束”后…</p>
+    <div class="ranking-meta">
+      <span>2025</span>
+      <span>法国</span>
+      <span>电影</span>
+      <span>543.9万 播放</span>
+      <span>热度指数 159</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="洛克斯" data-year="2019" data-region="英国" data-type="电影" data-genre="剧情" data-tags="黑人少女 伦敦 单亲家庭 现实主义 成长" data-category="asian-selection">
+  <a class="ranking-cover" href="movies/movie-0885.html">
+    <img src="135.jpg" alt="洛克斯封面" loading="lazy">
+    <span>99</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-0885.html">洛克斯</a>
+    <p>洛克斯的母亲突然精神病发作被带走。十二岁的洛克斯决心不让任何人把弟弟从她身边夺走。她不上报、不求救、不哭。她用零钱买食物，在朋友家地板上过夜，在街头躲避社工和帮派。弟弟发烧时，她撬开药店后门拿药；被小…</p>
+    <div class="ranking-meta">
+      <span>2019</span>
+      <span>英国</span>
+      <span>电影</span>
+      <span>538.9万 播放</span>
+      <span>热度指数 159</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="闺蜜嫁到" data-year="2021" data-region="中国大陆" data-type="电视剧" data-genre="都市、爱情、家庭" data-tags="闺蜜 婚姻 三角关系 撕渣男" data-category="asian-selection">
+  <a class="ranking-cover" href="movies/movie-1351.html">
+    <img src="1.jpg" alt="闺蜜嫁到封面" loading="lazy">
+    <span>100</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-1351.html">闺蜜嫁到</a>
+    <p>“林笑笑”和“田甜”是从小一起长大的闺蜜，感情好到可以穿同一条裤子。阴差阳错下，林笑笑嫁给了豪门陈家的大公子陈默，田甜则嫁给了二公子陈言。本以为从闺蜜变成妯娌是亲上加亲，没想到豪门深似海。婆婆表面上对…</p>
+    <div class="ranking-meta">
+      <span>2021</span>
+      <span>中国大陆</span>
+      <span>电视剧</span>
+      <span>535.0万 播放</span>
+      <span>热度指数 159</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="女哭声国语" data-year="2023" data-region="韩国" data-type="电影" data-genre="恐怖" data-tags="古装 诅咒 女鬼" data-category="city-life">
+  <a class="ranking-cover" href="movies/movie-1484.html">
+    <img src="134.jpg" alt="女哭声国语封面" loading="lazy">
+    <span>101</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-1484.html">女哭声国语</a>
+    <p>李氏朝鲜，武将之女嫁入豪门，新婚夜全家七口离奇死亡，唯独哑巴小姑玉贞幸存，且耳朵开始听见女人哭声。请来的巫女说，这宅子三百年前烧死过一名孕妇，她诅咒所有嫁进来的新娘。玉贞为替嫂子复仇，在书生帮助下调查…</p>
+    <div class="ranking-meta">
+      <span>2023</span>
+      <span>韩国</span>
+      <span>电影</span>
+      <span>533.7万 播放</span>
+      <span>热度指数 159</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="我最亲爱的" data-year="2023" data-region="中国台湾" data-type="电影" data-genre="剧情, 同性, 家庭" data-tags="晚年出柜 失智症 临终关怀 和解 催泪" data-category="hot-movies">
+  <a class="ranking-cover" href="movies/movie-1282.html">
+    <img src="82.jpg" alt="我最亲爱的封面" loading="lazy">
+    <span>102</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-1282.html">我最亲爱的</a>
+    <p>70岁的退休校长老陈因失智症住进护理院。女儿小如发现他每天都会对着空气说“我最亲爱的阿海”，并让他“赶紧来接他”。阿海是谁？小如翻遍老照片，只找到一张1969年被撕掉一半的合照。随着病情恶化，老陈的记…</p>
+    <div class="ranking-meta">
+      <span>2023</span>
+      <span>中国台湾</span>
+      <span>电影</span>
+      <span>514.8万 播放</span>
+      <span>热度指数 159</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="海豚爱上猫" data-year="2024" data-region="中国大陆" data-type="电视剧" data-genre="爱情 / 奇幻 / 治愈" data-tags="动物人格 自闭症 海洋馆 非人类恋爱" data-category="asian-selection">
+  <a class="ranking-cover" href="movies/movie-0815.html">
+    <img src="65.jpg" alt="海豚爱上猫封面" loading="lazy">
+    <span>103</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-0815.html">海豚爱上猫</a>
+    <p>海洋馆清洁工苏音患有高功能自闭症，但她能通过声呐震动“听”懂海豚的情绪。她暗恋每天傍晚来海豚馆发呆的前海军陆战队队员沈岸。沈岸在一次深海救援中为救海豚而脑部受伤，从此无法识别人类表情，被妻子抛弃，被部…</p>
+    <div class="ranking-meta">
+      <span>2024</span>
+      <span>中国大陆</span>
+      <span>电视剧</span>
+      <span>511.7万 播放</span>
+      <span>热度指数 159</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="我们这一班，有教无类" data-year="2025" data-region="中国台湾" data-type="剧集" data-genre="剧情 / 校园" data-tags="教育 师生 温情 励志" data-category="asian-selection">
+  <a class="ranking-cover" href="movies/movie-1748.html">
+    <img src="98.jpg" alt="我们这一班，有教无类封面" loading="lazy">
+    <span>104</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-1748.html">我们这一班，有教无类</a>
+    <p>台南一所郊区中学的三年二班，聚集了全校最让老师头疼的学生：霸凌者、逃学者、自闭症、阅读障碍、以及一个常年不说话的学生。学校打算在升学前将这个班“分流”出去，新来的导师陈明章却拒绝了所有建议，坚持用最“…</p>
+    <div class="ranking-meta">
+      <span>2025</span>
+      <span>中国台湾</span>
+      <span>剧集</span>
+      <span>511.0万 播放</span>
+      <span>热度指数 159</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="大赢家2020" data-year="2020" data-region="中国大陆" data-type="电影" data-genre="喜剧，动作" data-tags="抢银行 演习 杠精 打工人 荒诞" data-category="mystery">
+  <a class="ranking-cover" href="movies/movie-0014.html">
+    <img src="14.jpg" alt="大赢家2020封面" loading="lazy">
+    <span>105</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-0014.html">大赢家2020</a>
+    <p>在一次银行抢劫模拟演习中，所有人都想走走过场早点下班，只有凡事都遵守规则的“轴人”严谨，为了扮演好劫匪，他不仅做了详细的作战计划，甚至锻炼体能。当演习开始，他直接挟持了真行长，抢走了金库里的真钞。警方…</p>
+    <div class="ranking-meta">
+      <span>2020</span>
+      <span>中国大陆</span>
+      <span>电影</span>
+      <span>497.9万 播放</span>
+      <span>热度指数 159</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="在魔鬼知道你死前" data-year="2024" data-region="美国" data-type="电影" data-genre="犯罪, 惊悚, 悬疑" data-tags="黑吃黑 时间倒流 兄弟情 暴力" data-category="asian-selection">
+  <a class="ranking-cover" href="movies/movie-0494.html">
+    <img src="44.jpg" alt="在魔鬼知道你死前封面" loading="lazy">
+    <span>106</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-0494.html">在魔鬼知道你死前</a>
+    <p>惯犯哥哥麦克斯说服刚出狱的弟弟文森特，去打劫自家经营的珠宝店以骗取保险金。看似天衣无缝的计划，却在执行时因为一个保安的意外身亡，演变成血案。更诡异的是，每次他们试图掩盖证据，都会触发更离奇的连锁反应…</p>
+    <div class="ranking-meta">
+      <span>2024</span>
+      <span>美国</span>
+      <span>电影</span>
+      <span>625.8万 播放</span>
+      <span>热度指数 158</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="宝贝新官人" data-year="2025" data-region="中国大陆" data-type="剧集" data-genre="喜剧 / 古装 / 爱情" data-tags="萌娃 官场 智斗 反贪 轻松下饭" data-category="animation-documentary">
+  <a class="ranking-cover" href="movies/movie-0559.html">
+    <img src="109.jpg" alt="宝贝新官人封面" loading="lazy">
+    <span>107</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-0559.html">宝贝新官人</a>
+    <p>大梁朝，7岁的户部侍郎之子小宝，因为太过聪明，被昏庸的皇帝点名派往贪腐重地清河县担任县令，只为看一场“小孩儿斗贪官”的好戏。小宝带着奶妈和一只会算数的鹦鹉走马上任。面对一帮老奸巨猾的师爷、县丞，小宝从…</p>
+    <div class="ranking-meta">
+      <span>2025</span>
+      <span>中国大陆</span>
+      <span>剧集</span>
+      <span>611.2万 播放</span>
+      <span>热度指数 158</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="求爱女王" data-year="2024" data-region="韩国" data-type="剧集" data-genre="浪漫喜剧" data-tags="大女主 相亲 反套路" data-category="action-adventure">
+  <a class="ranking-cover" href="movies/movie-0158.html">
+    <img src="8.jpg" alt="求爱女王封面" loading="lazy">
+    <span>108</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-0158.html">求爱女王</a>
+    <p>姜智慧是首尔顶级恋爱咨询师，专治各种感情疑难杂症，客户包括财阀二代、顶流爱豆、政客千金。她写的《恋爱兵法》畅销百万册，被奉为“求爱女王”。没人知道的是，她本人母胎单身三十三年，连初吻都没送出去。她的“…</p>
+    <div class="ranking-meta">
+      <span>2024</span>
+      <span>韩国</span>
+      <span>剧集</span>
+      <span>600.5万 播放</span>
+      <span>热度指数 158</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="神奇的旋转木马" data-year="2021" data-region="日本" data-type="电影" data-genre="动画、奇幻、治愈" data-tags="亲情 时间回溯 游乐园 催泪" data-category="classic-list">
+  <a class="ranking-cover" href="movies/movie-1024.html">
+    <img src="124.jpg" alt="神奇的旋转木马封面" loading="lazy">
+    <span>109</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-1024.html">神奇的旋转木马</a>
+    <p>七岁的小女孩小春的母亲因病去世，她始终无法接受。某日，她误入一座即将拆除的废弃游乐园，坐上了一台老旧的旋转木马。木马启动后，她发现每转完完整一圈，时间就会倒流五分钟。小春开始反复回到母亲去世前的那个下…</p>
+    <div class="ranking-meta">
+      <span>2021</span>
+      <span>日本</span>
+      <span>电影</span>
+      <span>593.4万 播放</span>
+      <span>热度指数 158</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="原声追凶" data-year="2024" data-region="西班牙" data-type="剧集" data-genre="悬疑, 犯罪" data-tags="听觉破案 极客侦探 城市声音 连环杀手" data-category="mystery">
+  <a class="ranking-cover" href="movies/movie-0690.html">
+    <img src="90.jpg" alt="原声追凶封面" loading="lazy">
+    <span>110</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-0690.html">原声追凶</a>
+    <p>城市里出现了一位被称为“调音师”的连环杀手，他会在犯罪现场播放一段特定的古典乐。警方束手无策，转而求助于因耳鸣而半退休的天才声学工程师安娜。安娜可以通过分析录音中的回声、背景噪音、甚至脚步声的细微差异…</p>
+    <div class="ranking-meta">
+      <span>2024</span>
+      <span>西班牙</span>
+      <span>剧集</span>
+      <span>589.0万 播放</span>
+      <span>热度指数 158</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="针" data-year="2025" data-region="韩国" data-type="电影" data-genre="悬疑 / 惊悚 / 剧情" data-tags="催眠 记忆篡改 连环杀人 心理对抗 反转" data-category="classic-list">
+  <a class="ranking-cover" href="movies/movie-1623.html">
+    <img src="123.jpg" alt="针封面" loading="lazy">
+    <span>111</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-1623.html">针</a>
+    <p>城里发生连环命案，受害者均被发现时面带微笑，仿佛在幸福中死去。所有线索指向一种古老的针灸术，能够精准刺激大脑记忆区。特案组警探车秀贤拥有罕见的“梦穿”能力，能进入他人的潜意识梦境。她潜入幸存者混乱的记…</p>
+    <div class="ranking-meta">
+      <span>2025</span>
+      <span>韩国</span>
+      <span>电影</span>
+      <span>588.3万 播放</span>
+      <span>热度指数 158</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="基隆博" data-year="2023" data-region="中国台湾" data-type="电影" data-genre="剧情 / 同性" data-tags="基隆 印尼移工 渔船 偷渡" data-category="sci-fi-fantasy">
+  <a class="ranking-cover" href="movies/movie-1689.html">
+    <img src="39.jpg" alt="基隆博封面" loading="lazy">
+    <span>112</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-1689.html">基隆博</a>
+    <p>印尼移工阿星在基隆港渔船上打工三年，爱上了沉默寡言但温柔的台湾船长阿杰。两人在狭小的船舱里发展出隐秘关系。阿杰因欠债将被船东收回渔船，决定带阿星偷渡去冲绳。出发前夜，阿星被移民署带走，阿杰持刀阻拦被捕…</p>
+    <div class="ranking-meta">
+      <span>2023</span>
+      <span>中国台湾</span>
+      <span>电影</span>
+      <span>580.6万 播放</span>
+      <span>热度指数 158</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="一骗到底" data-year="2024" data-region="中国" data-type="电影" data-genre="喜剧 / 犯罪" data-tags="电信诈骗 反诈 卧底 反转 荒诞" data-category="romance-healing">
+  <a class="ranking-cover" href="movies/movie-1222.html">
+    <img src="22.jpg" alt="一骗到底封面" loading="lazy">
+    <span>113</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-1222.html">一骗到底</a>
+    <p>魔术师阿豪因生意失败欠下高利贷，走投无路时被反诈警察老周看中了他的“快手”技巧，让他卧底进入本地最大的电信诈骗集团。阿豪假装是骗术高手，凭借魔术手法制造出能“隔空改号”的假象，骗取了诈骗头目信任。然而…</p>
+    <div class="ranking-meta">
+      <span>2024</span>
+      <span>中国</span>
+      <span>电影</span>
+      <span>577.5万 播放</span>
+      <span>热度指数 158</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="午餐之歌" data-year="2023" data-region="日本" data-type="电影" data-genre="剧情美食" data-tags="便当 校园霸凌 治愈救赎" data-category="sci-fi-fantasy">
+  <a class="ranking-cover" href="movies/movie-0821.html">
+    <img src="71.jpg" alt="午餐之歌封面" loading="lazy">
+    <span>114</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-0821.html">午餐之歌</a>
+    <p>高中女生小春因长相土气被全班孤立，每天独自在天台吃妈妈做的难看但用心的便当。她开始为每一份便当写一首“午餐之歌”，用手机录下来只给自己听。某天，班里最受欢迎的阳光男生健太偶然上天台听到，被歌词打动，偷…</p>
+    <div class="ranking-meta">
+      <span>2023</span>
+      <span>日本</span>
+      <span>电影</span>
+      <span>566.7万 播放</span>
+      <span>热度指数 158</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="怀玉公主" data-year="2000" data-region="中国台湾" data-type="剧集" data-genre="古装 / 爱情 / 喜剧" data-tags="公主 身世之谜 虐恋 宫廷 女扮男装" data-category="animation-documentary">
+  <a class="ranking-cover" href="movies/movie-1156.html">
+    <img src="106.jpg" alt="怀玉公主封面" loading="lazy">
+    <span>115</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-1156.html">怀玉公主</a>
+    <p>前朝遗孤怀玉自幼被将军收养，习得一身武艺却不知自己真实身份。为替养父洗刷冤屈，她女扮男装混入京城，意外救了微服私访的康熙皇帝，两人结为异姓兄弟。与此同时，藩王世子吴应熊对她产生异样情愫，不断试探她的女…</p>
+    <div class="ranking-meta">
+      <span>2000</span>
+      <span>中国台湾</span>
+      <span>剧集</span>
+      <span>564.6万 播放</span>
+      <span>热度指数 158</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="今晚开赞吧" data-year="2024" data-region="中国台湾" data-type="剧集" data-genre="喜剧 / 剧情 / 职场" data-tags="社交媒体 点赞 网红 数字孤独 治愈" data-category="animation-documentary">
+  <a class="ranking-cover" href="movies/movie-0354.html">
+    <img src="54.jpg" alt="今晚开赞吧封面" loading="lazy">
+    <span>116</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-0354.html">今晚开赞吧</a>
+    <p>26 岁的阿光在一家 MCN 机构打杂，自己发的任何内容都不超过 80 个赞。某夜，他收到一封装在旧手机里的邮件：“今晚开赞吧，限时三小时，百万赞达成。”他随手自拍一张啃鸡腿的照片，点击发送。三小时后…</p>
+    <div class="ranking-meta">
+      <span>2024</span>
+      <span>中国台湾</span>
+      <span>剧集</span>
+      <span>563.6万 播放</span>
+      <span>热度指数 158</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="直到天空迎来太阳" data-year="2025" data-region="泰国" data-type="电视剧" data-genre="爱情 / 剧情 / 家庭" data-tags="先婚后爱 虐恋 救赎" data-category="action-adventure">
+  <a class="ranking-cover" href="movies/movie-1287.html">
+    <img src="87.jpg" alt="直到天空迎来太阳封面" loading="lazy">
+    <span>117</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-1287.html">直到天空迎来太阳</a>
+    <p>富家千金安雅因一场车祸失去双亲，肇事司机是贫困的农场主阿特。为偿还债务，安雅被迫嫁给阿特。婚后她将阿特视为仇人，百般刁难，而阿特默默承受一切，像个仆人一样照顾她。安雅试图用自己的社交手腕毁掉阿特的农场…</p>
+    <div class="ranking-meta">
+      <span>2025</span>
+      <span>泰国</span>
+      <span>电视剧</span>
+      <span>562.9万 播放</span>
+      <span>热度指数 158</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="我们并非国王之子" data-year="2019" data-region="中国大陆" data-type="电影" data-genre="现实主义, 家庭, 公路, 剧情" data-tags="身世悬念 兄弟同行 旧时代记忆 小城往返 认同困境" data-category="action-adventure">
+  <a class="ranking-cover" href="movies/movie-0754.html">
+    <img src="4.jpg" alt="我们并非国王之子封面" loading="lazy">
+    <span>118</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-0754.html">我们并非国王之子</a>
+    <p>故事从一座南方县城的拆迁开始。阿野和阿澄从小一起长大，一个沉默，一个嘴贫，谁也没有想过自己会在二十岁出头时因为一份陈旧档案，突然被迫重新理解“家”这个词。拆迁队清理老楼时翻出一只铁皮箱，箱内除了泛黄的…</p>
+    <div class="ranking-meta">
+      <span>2019</span>
+      <span>中国大陆</span>
+      <span>电影</span>
+      <span>560.3万 播放</span>
+      <span>热度指数 158</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="雪人奇缘" data-year="2026" data-region="美国 / 中国大陆" data-type="动画电影" data-genre="奇幻, 冒险, 动画" data-tags="神秘生物 友谊 喜马拉雅 家庭" data-category="action-adventure">
+  <a class="ranking-cover" href="movies/movie-1019.html">
+    <img src="119.jpg" alt="雪人奇缘封面" loading="lazy">
+    <span>119</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-1019.html">雪人奇缘</a>
+    <p>生活在城市的小女孩乐乐在生日那天下了一场奇怪的雪，她堆的雪人“阿酷”竟然活了过来。阿酷不仅能飞，还能让植物瞬间生长。它告诉乐乐，自己是喜马拉雅山的雪人王子，因为躲避邪恶的猎人追捕而流落至此，只有雪山之…</p>
+    <div class="ranking-meta">
+      <span>2026</span>
+      <span>美国 / 中国大陆</span>
+      <span>动画电影</span>
+      <span>550.8万 播放</span>
+      <span>热度指数 158</span>
+    </div>
+  </div>
+</article>
+<article class="ranking-row searchable-card" data-title="小狮王守护队：狮王再起" data-year="2024" data-region="美国" data-type="电影/动画" data-genre="动画，冒险，家庭" data-tags="续集 成长 责任 草原冒险" data-category="hd-theater">
+  <a class="ranking-cover" href="movies/movie-1882.html">
+    <img src="82.jpg" alt="小狮王守护队：狮王再起封面" loading="lazy">
+    <span>120</span>
+  </a>
+  <div class="ranking-info">
+    <a href="movies/movie-1882.html">小狮王守护队：狮王再起</a>
+    <p>荣耀国的老狮王辛巴正式退休，将王位传给了女儿。新一代“小狮王守护队”由不同种族的年轻动物组成：自信过头的小狮王子、胆小的蜜獾、爱臭美的冠鹤和沉默寡言的大象。他们迎来的第一个大挑战，是一个被称为“草原幽…</p>
+    <div class="ranking-meta">
+      <span>2024</span>
+      <span>美国</span>
+      <span>电影/动画</span>
+      <span>516.6万 播放</span>
+      <span>热度指数 158</span>
+    </div>
+  </div>
+</article>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <strong>免费亚洲电影</strong>
+      <p>围绕免费亚洲电影整理高清片库，包含热门、经典和精选影片，页面信息持续补充。</p>
+    </div>
+    <div class="footer-links">
+      <a href="categories/asian-selection.html">亚洲精选</a> <a href="categories/hd-theater.html">高清剧场</a> <a href="categories/hot-movies.html">热门电影</a> <a href="categories/classic-list.html">经典片单</a> <a href="categories/city-life.html">都市生活</a>
+    </div>
+    <p class="copyright">© 2026 免费亚洲电影. All rights reserved.</p>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

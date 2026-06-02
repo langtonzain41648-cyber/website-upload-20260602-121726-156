@@ -1,0 +1,25 @@
+{
+  "movie_count": 1980,
+  "html_file_count": 1994,
+  "detail_page_count": 1980,
+  "category_page_count": 10,
+  "category_distribution": {
+    "亚洲精选": 198,
+    "高清剧场": 198,
+    "热门电影": 198,
+    "经典片单": 198,
+    "都市生活": 198,
+    "悬疑推理": 198,
+    "动作冒险": 198,
+    "爱情治愈": 198,
+    "科幻奇幻": 198,
+    "动画纪实": 198
+  },
+  "category_covers_all_movies": true,
+  "ad_script_issues": [],
+  "baidu_script_issues": [],
+  "banned_phrase_hits": [],
+  "missing_internal_html_links": [],
+  "missing_internal_html_link_count": 0,
+  "player_pages_with_source": 1980
+}

@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>影片搜索 - 热播日韩电影-热门影片片库-高清电影在线播放</title>
+    <meta name="description" content="搜索热播日韩电影、高清电影和热门影片片库内容，支持按标题、地区、年份、类型与标签筛选。">
+    <meta name="keywords" content="热播日韩电影,日韩电影,热门影片片库,高清电影,精选日韩影片,在线播放,影片搜索,电影筛选">
+    <meta name="renderer" content="webkit">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav-inner">
+            <a class="brand" href="./index.html" aria-label="热播日韩电影">
+                <span class="brand-mark">▶</span>
+                <span class="brand-text">
+                    <strong>热播日韩电影</strong>
+                    <em>高清电影在线播放</em>
+                </span>
+            </a>
+            <nav class="main-nav" aria-label="主导航">
+                <a href="./index.html">首页</a>
+                <div class="nav-dropdown">
+                    <button type="button">分类</button>
+                    <div class="dropdown-panel">
+                        <a href="./category-rihan-hot.html">日韩热播</a>
+                        <a href="./category-hd-movie.html">高清电影</a>
+                        <a href="./category-popular-library.html">热门片库</a>
+                        <a href="./category-new-release.html">近期新片</a>
+                        <a href="./category-suspense-crime.html">悬疑犯罪</a>
+                        <a href="./category-romance-comedy.html">爱情喜剧</a>
+                        <a href="./category-action-scifi.html">动作科幻</a>
+                        <a href="./category-drama-family.html">剧情家庭</a>
+                    </div>
+                </div>
+                <a href="./categories.html">分类总览</a>
+                <a href="./ranking.html">排行榜</a>
+                <a href="./search.html">搜索</a>
+            </nav>
+            <form class="nav-search" action="./search.html" method="get">
+                <input type="search" name="q" placeholder="搜索影片" aria-label="搜索影片">
+                <button type="submit">搜索</button>
+            </form>
+            <button class="nav-toggle" type="button" data-menu-toggle aria-label="打开导航">☰</button>
+        </div>
+        <div class="mobile-menu" data-mobile-menu>
+            <div class="container mobile-menu-inner">
+                <a href="./index.html">首页</a>
+                <a href="./categories.html">分类总览</a>
+                <a href="./ranking.html">排行榜</a>
+                <a href="./search.html">搜索</a>
+                    <a href="./category-rihan-hot.html">日韩热播</a>
+                    <a href="./category-hd-movie.html">高清电影</a>
+                    <a href="./category-popular-library.html">热门片库</a>
+                    <a href="./category-new-release.html">近期新片</a>
+                    <a href="./category-suspense-crime.html">悬疑犯罪</a>
+                    <a href="./category-romance-comedy.html">爱情喜剧</a>
+                    <a href="./category-action-scifi.html">动作科幻</a>
+                    <a href="./category-drama-family.html">剧情家庭</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="page-hero compact-page-hero">
+            <div class="container">
+                <span class="hero-kicker">影片搜索</span>
+                <h1>搜索热播日韩电影</h1>
+                <p>输入影片标题、地区、年份、类型或标签，快速找到对应详情页。</p>
+            </div>
+        </section>
+        <section class="section section-solid">
+            <div class="container" data-search-page>
+                <form class="search-page-form" action="./search.html" method="get">
+                    <input type="search" name="q" placeholder="输入关键词" data-search-input>
+                    <button class="btn btn-primary" type="submit">搜索</button>
+                </form>
+                <div class="search-tools">
+                    <select data-search-region aria-label="按地区筛选">
+                        <option value="">全部地区</option>
+                    </select>
+                    <select data-search-year aria-label="按年份筛选">
+                        <option value="">全部年份</option>
+                    </select>
+                    <select data-search-type aria-label="按类型筛选">
+                        <option value="">全部类型</option>
+                    </select>
+                </div>
+                <div class="movie-grid movie-grid-four" data-search-results>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <a class="brand footer-brand" href="./index.html" aria-label="热播日韩电影">
+                    <span class="brand-mark">▶</span>
+                    <span class="brand-text">
+                        <strong>热播日韩电影</strong>
+                        <em>高清电影在线播放</em>
+                    </span>
+                </a>
+                <p>热播日韩电影栏目整理近期热度较高的日韩影片，覆盖多题材分类和精选片单。</p>
+            </div>
+            <div>
+                <h2>快速导航</h2>
+                <a href="./index.html">首页</a>
+                <a href="./categories.html">分类总览</a>
+                <a href="./ranking.html">排行榜</a>
+                <a href="./search.html">影片搜索</a>
+            </div>
+            <div>
+                <h2>精选分类</h2>
+                    <a href="./category-rihan-hot.html">日韩热播</a>
+                    <a href="./category-hd-movie.html">高清电影</a>
+                    <a href="./category-popular-library.html">热门片库</a>
+                    <a href="./category-new-release.html">近期新片</a>
+                    <a href="./category-suspense-crime.html">悬疑犯罪</a>
+                    <a href="./category-romance-comedy.html">爱情喜剧</a>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <span>© 热播日韩电影</span>
+            <span>热门影片片库 · 高清电影在线播放</span>
+        </div>
+    </footer>
+    <script src="./assets/search-index.js"></script>
+    <script src="./assets/app.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
